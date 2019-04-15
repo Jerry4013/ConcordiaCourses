@@ -1,0 +1,88 @@
+body {
+    background-image: url("galaxy.jpg");
+    background-repeat: repeat;
+}
+
+div.box {
+    color: ghostwhite;
+    border: 15px solid ghostwhite;
+    padding: 10px;
+    width: 550px;
+    background-color: black;
+    margin: 50px;
+
+    text-align: center;
+}
+
+table {
+    margin: 50px;
+    border: 15px dashed silver;
+
+    width: 600px;
+}
+
+th {
+    background-color: midnightblue;
+    color: aliceblue;
+    padding: 10px;
+}
+
+td.twoone {
+    background-color: lightcyan;
+    border: 2px solid darkturquoise;
+}
+
+td.twotwo {
+    background-color: lavenderblush;
+    border: 2px solid pink;
+}
+
+td.threeone {
+    background-color: lightyellow;
+    border: 2px solid moccasin;
+}
+
+td.threetwo {
+    background-color: lavender;
+    border: 2px solid mediumpurple;
+}
+
+.ctwotwo {
+    color: pink;
+}
+
+.cthreetwo {
+    color: mediumpurple;
+}
+
+.cwhite {
+    color: white;
+}
+
+ol.ur {
+    list-style-type: upper-roman;
+}
+
+ol.ua {
+    list-style-type: upper-alpha;
+}
+
+ol.jap {
+    list-style-type: hiragana;
+}
+
+ol li ul li ul.sq {
+    list-style-type: square;
+}
+
+ul.ec {
+    list-style-type: circle;
+}
+
+ul.ima {
+    list-style-image: url("25.png");
+}
+
+ol li ul.ima2 {
+    list-style-image: url("252.png");
+}

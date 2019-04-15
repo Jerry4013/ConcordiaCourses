@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"assignment.a1","c":"OddonacciBad","l":"main(String[])","url":"main-java.lang.String:A-"},{"p":"assignment.a1","c":"OddonacciBad","l":"oddonacciBad(int)"},{"p":"assignment.a1","c":"OddonacciBad","l":"OddonacciBad()"}]

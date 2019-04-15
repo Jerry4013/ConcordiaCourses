@@ -1,0 +1,16 @@
+teaches(dr_fred, history).
+teaches(dr_fred, english).
+teaches(dr_fred, drama).
+teaches(dr_fiona, physics).
+teaches(dr_fiona, math).
+
+
+studies(alice, english).
+studies(angus, english).
+studies(amelia, drama).
+studies(alex, physics).
+
+%Queries: test each query to see the difference
+%teaches(dr_fred, Course), studies(Student, Course).
+%teaches(dr_fred, Course),!, studies(Student, Course).
+%teaches(dr_fred, Course), studies(Student, Course)!.

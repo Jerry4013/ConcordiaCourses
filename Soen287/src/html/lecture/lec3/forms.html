@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>forms</title>
+</head>
+<body>
+<form action="">
+  <fieldset id="f1">
+    <legend>Personal</legend>
+    <label>Name <input type="text"></label><br><br>
+    <label>Email <input type="email"></label><br><br>
+    <label>Phone <input type="tel"></label><br><br>
+    <label>Subject
+      <select name="subject" id="">
+        <option value="Appointment">Appointment</option>
+        <option value="Interview">Interview</option>
+        <option value="Reg">Regarding a Post</option>
+      </select>
+    </label>
+  </fieldset>
+  <fieldset>
+    <legend>Message</legend>
+    <label>Message
+      <textarea name="message" id="21" cols="30" rows="10"></textarea>
+      <input type="submit" value="submit">
+    </label>
+  </fieldset>
+  <input type="range" id="myAge" name="myAge" min="0", max="200">
+  <p>
+    <label>Name:
+      <input type="text" name="name" size="30" placeholder="Jingchao">
+    </label>
+    <label>Date of Birth
+      <input type="date">
+    </label>
+  </p>
+  <p>
+    <label>Multiple:
+      <select name="choice" id="choice">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+    </label>
+  </p>
+</form>
+</body>
+</html>

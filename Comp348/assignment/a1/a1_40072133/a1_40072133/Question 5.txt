@@ -1,0 +1,103 @@
+Question 5 
+1.Write a prolog rule totalIncome/2 to compute the total income of a family.
+
+total([ ],0).
+total([Person|List],Sum):-
+salary(Person,S),
+total(List,Rest),
+Sum is S + Rest .
+
+tot_income(family(Husband,Wife,Children),I):-family(Husband,Wife,Children),
+    total([Husband,Wife|Children],I).
+
+2.Write a prolog query to print total income of each family.
+?-
+tot_income(family(Husband,Wife,Children),I)
+
+Output:
+
+one family:
+
+Children = [],
+Husband = person(john, cohen, date(17, may, 1990), unemployed),
+I = 0,
+Wife = person(lily, cohen, date(9, may, 1990), unemployed)
+
+each family:
+
+Children = [],
+Husband = person(john, cohen, date(17, may, 1990), unemployed),
+I = 0,
+Wife = person(lily, cohen, date(9, may, 1990), unemployed)
+Children = [],
+Husband = person(john, armstrong, date(7, may, 1988), unemployed),
+I = 0,
+Wife = person(lily, armstrong, date(29, may, 1961), unemployed)
+Children = [person(louie, baily, date(25, may, 1983), unemployed)],
+Husband = person(eric, baily, date(7, may, 1963), works(bbc, 2200)),
+I = 3200,
+Wife = person(grace, baily, date(9, may, 1965), works(ntu, 1000))
+Children = [person(louie, baily, date(25, may, 1983), unemployed)],
+Husband = person(eric, baily, date(7, may, 1963), works(acc, 21200)),
+I = 33200,
+Wife = person(grace, baily, date(9, may, 1965), works(ntnu, 12000))
+Children = [person(louie, fox, date(5, may, 1993), unemployed)],
+Husband = person(eric, fox, date(27, may, 1970), works(bbc, 25200)),
+I = 38200,
+Wife = person(grace, fox, date(9, may, 1971), works(ntbu, 13000))
+Children = [person(pat, cohen, date(5, may, 1983), works(bcd, 15200)), person(jim, cohen, date(5, may, 1983), works(bcd, 15200))],
+Husband = person(tom, cohen, date(7, may, 1960), works(bcd, 15200)),
+I = 45600,
+Wife = person(ann, cohen, date(29, may, 1961), unemployed)
+Children = [person(bob, armstrong, date(6, oct, 1999), unemployed), person(sam, armstrong, date(8, oct, 1998), unemployed)],
+Husband = person(bob, armstrong, date(12, oct, 1977), works(ntnu, 12000)),
+I = 12000,
+Wife = person(liz, armstrong, date(6, oct, 1975), unemployed)
+Children = [person(patty, oliver, date(8, may, 1984), unemployed), person(jimey, oliver, date(5, may, 1983), unemployed)],
+Husband = person(tony, oliver, date(7, may, 1960), works(bbc, 35200)),
+I = 35200,
+Wife = person(anny, oliver, date(9, may, 1961), unemployed)
+Children = [person(andy, fox, date(5, aug, 1967), works(com, 12000)), person(kai, fox, date(5, jul, 1969), unemployed)],
+Husband = person(jack, fox, date(27, may, 1940), unemployed),
+I = 25050,
+Wife = person(jane, fox, date(9, aug, 1941), works(ntu, 13050))
+false
+
+3.Write a prolog query to print family details of each family that has income per family member
+less than 2000.
+?-
+family( Husband, Wife, Children),
+total( [ Husband, Wife | Children ] , Income ),
+length( [ Husband, Wife | Children ] , N ), 
+Income / N < 2000.
+
+Outcome:
+Children = [],
+Husband = person(john, cohen, date(17, may, 1990), unemployed),
+Income = 0,
+N = 2,
+Wife = person(lily, cohen, date(9, may, 1990), unemployed)
+Children = [],
+Husband = person(john, armstrong, date(7, may, 1988), unemployed),
+Income = 0,
+N = 2,
+Wife = person(lily, armstrong, date(29, may, 1961), unemployed)
+Children = [person(louie, baily, date(25, may, 1983), unemployed)],
+Husband = person(eric, baily, date(7, may, 1963), works(bbc, 2200)),
+Income = 3200,
+N = 3,
+Wife = person(grace, baily, date(9, may, 1965), works(ntu, 1000))
+
+4.Write a prolog query to print family details of each family where children¡¯s total income is more
+than their parents.
+?-
+family(Husband,Wife,Children),total([Husband,Wife|[]],IncomeParrents ),total([Husband, Wife|Children],IncomeAll),(IncomeAll-IncomeParrents)>IncomeParrents.
+
+Output:
+
+Children = [person(pat, cohen, date(5, may, 1983), works(bcd, 15200)), person(jim, cohen, date(5, may, 1983), works(bcd, 15200))],
+Husband = person(tom, cohen, date(7, may, 1960), works(bcd, 15200)),
+IncomeAll = 45600,
+IncomeParrents = 15200,
+Wife = person(ann, cohen, date(29, may, 1961), unemployed)
+false

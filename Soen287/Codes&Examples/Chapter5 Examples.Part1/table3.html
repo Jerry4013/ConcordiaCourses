@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<!-- table3.html -->
+<html lang ="en">
+	<head> 
+	  <meta charset="utf-8">
+	  <title> Table to Show DOM </title>
+	  <style type="text/css">
+		td, th, table {border:thin solid blue;}
+	  </style>
+	</head>
+    <body>
+		<table>
+		<!-- This table has 4 rows and 5 columns --> 
+		<tr>
+			<td colspan = 4>This cell spans all 4 col.</td>
+		</tr>
+		<tr> <!-- Row #1 -->
+			<td>row 2, cell 1</td>
+			<td>row 2, cell 2</td>
+			<td>row 2, cell 3</td>
+			<td>row 2, cell 4</td>
+		</tr>
+		<tr>
+			<td>row 3, cell 1</td>
+			<td rowspan = 2 >row 3 cell 2 spans 2 rows</td>
+			<td colspan = 2 >row 3 cell 3 spans 2 col</td>
+		</tr>
+		<tr> <!-- Row #4 -->
+			<td>row 4 cell 1</td>
+			<td>row 4 cell 3</td>
+			<td>row 4 cell 4</td>
+		</tr>
+		</table>
+   </body>
+</html>

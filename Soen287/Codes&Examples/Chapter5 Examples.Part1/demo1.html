@@ -1,0 +1,11 @@
+<!DOCTYPE html><html lang="en">
+<head>
+	<meta  charset="UTF-8">	<title>Demo 1</title>
+	<script>
+	 function doItAll() {
+	    var myPara=document.getElementById('p1');
+			myPara.style.fontSize='150%';
+			myPara.style.color='dodgerblue';
+			myPara.innerHTML='Doing it all in one click';
+	}	</script>
+</head><body>	<p id="p1">Hello World!</p>	<button type="button" onclick="getElementById('p1').style.color='red';">	Click Me Red!</button>	<button type="button" onclick="getElementById('p1').style.fontSize='150%';">	Click Me Larger!</button>	<button type="button" onclick="getElementById('p1').innerHTML='New text';">	Click Me Change!</button><br /><br />	<button type="button" onclick=doItAll();>	Do it all!</button></body></html>

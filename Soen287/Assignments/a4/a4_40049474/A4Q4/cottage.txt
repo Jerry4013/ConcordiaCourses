@@ -1,0 +1,55 @@
+{"petsAllowed":true,"type":"1/3","location":"Mont-Tremblant","price":895,"amenities":["BBQ","Parking"],"address":"20 Chemin Denis, Mont-Tremblant, QC J8E 1X8"}
+{"petsAllowed":true,"type":"2/5","location":"Laurentides","price":1195,"amenities":["Balcony","Water","BBQ","Parking"],"address":"90-98 Rue Communautaire, Mont-Saint-Michel, QC J0W 1P0"}
+{"petsAllowed":false,"type":"1/4","location":"Magog","price":950,"amenities":["Balcony","Water","Parking"],"address":"282-200 Rue Saint-Patrice Ouest, Magog, QC J1X 1W3"}
+{"petsAllowed":false,"type":"1/4","location":"Magog","price":986,"amenities":["Balcony","Water","Parking","fire"],"address":"78 Rue Saint-Patrice Ouest, Magog, QC J1X 1V9"}
+{"petsAllowed":true,"type":"1/3","location":"Quebec City","price":695,"amenities":["Balcony","Water","Parking","fire","BBQ"],"address":"113-7 Boulevard René-Lévesque O, Québec, QC G1R 2A3"}
+{"petsAllowed":true,"type":"1/2","location":"Quebec City","price":495,"amenities":["Water","fire"],"address":"152 Rue Aberdeen, Québec, QC G1R 2C8"}
+{"petsAllowed":false,"type":"1/4","location":"Gatineau","price":689,"amenities":["Water","fire","Laundromat","Balcony"],"address":"20 Chemin de la Savane, Gatineau, QC J8T 1P7"}
+{"petsAllowed":false,"type":"1/3","location":"Magog","price":520,"amenities":["Water","Balcony"],"address":"378 Rue Principale O, Magog, QC J1X 2A9"}
+{"petsAllowed":true,"type":"1/4","location":"Mont-Tremblant","price":870,"amenities":["fire","Laundromat","BBQ","Water","Balcony"],"address":"480 Rue Charbonneau, Mont-Tremblant, QC J8E 3H4"}
+{"petsAllowed":true,"type":"2/5","location":"Mont-Tremblant","price":1100,"amenities":["fire","Laundromat","BBQ","Parking","Water"],"address":"1030 Rue Lauzon, Mont-Tremblant, QC J8E 3J5"}
+{"petsAllowed":true,"type":"1/3","location":"Quebec City","price":528,"amenities":["fire","Laundromat","Water"],"address":"270-200 Rue Saint-Olivier, Québec, QC G1R 1G3"}
+{"petsAllowed":false,"type":"1/2","location":"Magog","price":380,"amenities":["fire","Water"],"address":"320 Rue Saint-Patrice Ouest, Magog, QC J1X 1W5"}
+{"petsAllowed":false,"type":"1/2","location":"Quebec City","price":450,"amenities":["fire","Water","Laundromat"],"address":"465 Rue Bayard, Québec, QC G1K 4S4"}
+{"petsAllowed":true,"type":"2/5","location":"Laurentides","price":1180,"amenities":["fire","Laundromat","BBQ","Water","Laundromat"],"address":"437 Rue du Pont, Mont-Laurier, QC J9L 2R8"}
+{"petsAllowed":true,"type":"1/4","location":"Gatineau","price":590,"amenities":["fire","Water","Laundromat"],"address":"30 Boul Louis Riel, Gatineau, QC J8T 1Y1"}
+{"petsAllowed":true,"type":"1/2","location":"Gatineau","price":350,"amenities":["fire","Water","Laundromat","Balcony"],"address":"5-33 Rue Beauséjour, Gatineau, QC J8T 5T1"}
+{"petsAllowed":true,"type":"1/3","location":"Gatineau","price":520,"amenities":["fire","Laundromat","Parking","Balcony","Water"],"address":"156-178 Rue de Sillery, Gatineau, QC J8T 7J7"}
+{"petsAllowed":true,"type":"1/4","location":"Quebec City","price":855,"amenities":["Balcony","Parking","Water","Laundromat"],"address":"507 Lakeshore Street Grand-Mère, QC G9T P6C"}
+{"petsAllowed":false,"type":"1/2","location":"Quebec City","price":345,"amenities":["Parking","Laundromat","BBQ","Water"],"address":"485 Heather St. Maniwaki, QC J9E C9H"}
+{"petsAllowed":true,"type":"1/3","location":"Laurentides","price":689,"amenities":["Laundromat"],"address":"654 Pacific St. Laval-des-Rapides, QC H7N Y7Y"}
+{"petsAllowed":true,"type":"1/2","location":"Quebec City","price":917,"amenities":["fire","BBQ","Water","Parking","Laundromat","Balcony"],"address":"235 Lafayette St., Outremont, QC H2V B8P"}
+{"petsAllowed":true,"type":"1/2","location":"Magog","price":1103,"amenities":["BBQ","fire","Water","Parking"],"address":"475 Bayberry Street Sainte-Dorothée, QC H7X Y4X"}
+{"petsAllowed":false,"type":"1/3","location":"Quebec City","price":431,"amenities":["Balcony","BBQ","Laundromat","Parking","Water","fire"],"address":"8789 South John Lane Val-des-Monts, QC J8N E0V"}
+{"petsAllowed":true,"type":"1/4","location":"Quebec City","price":965,"amenities":["Laundromat","Water"],"address":"20 Delaware Dr. Gaspé, QC G4X N7H"}
+{"petsAllowed":true,"type":"1/3","location":"Quebec City","price":623,"amenities":["Water","Balcony","BBQ","Parking","fire","Laundromat"],"address":"76 Tailwater St. La Prairie, QC J5R H3H"}
+{"petsAllowed":false,"type":"1/2","location":"Laurentides","price":389,"amenities":["BBQ","Parking","Balcony","Water"],"address":"475 Bayberry Street Sainte-Dorothée, QC H7X Y4X"}
+{"petsAllowed":true,"type":"2/5","location":"Gatineau","price":1170,"amenities":["Laundromat"],"address":"938 Cherry Hill Street, Lac-Megantic, QC G6B N0A"}
+{"petsAllowed":true,"type":"1/4","location":"Mont-Tremblant","price":635,"amenities":["fire","Parking","Laundromat","Water","BBQ","Balcony"],"address":"938 Cherry Hill Street, Lac-Megantic, QC G6B N0A"}
+{"petsAllowed":false,"type":"1/4","location":"Magog","price":518,"amenities":["Parking","Balcony","fire"],"address":"507 Lakeshore Street Grand-Mère, QC G9T P6C"}
+{"petsAllowed":true,"type":"1/4","location":"Laurentides","price":815,"amenities":["BBQ","Water","Parking"],"address":"938 Cherry Hill Street, Lac-Megantic, QC G6B N0A"}
+{"petsAllowed":false,"type":"1/3","location":"Magog","price":861,"amenities":["Parking"],"address":"211 Roehampton Street, Cap-Rouge, QC G1Y H5R"}
+{"petsAllowed":false,"type":"1/4","location":"Gatineau","price":476,"amenities":["Laundromat","Balcony"],"address":"8129 Arcadia Road, Saint-Émile, QC G3E P5S"}
+{"petsAllowed":false,"type":"2/5","location":"Gatineau","price":686,"amenities":["Water","Laundromat"],"address":"8789 South John Lane Val-des-Monts, QC J8N E0V"}
+{"petsAllowed":true,"type":"1/2","location":"Quebec City","price":707,"amenities":["Balcony","Water","fire"],"address":"76 Tailwater St. La Prairie, QC J5R H3H"}
+{"petsAllowed":true,"type":"2/5","location":"Laurentides","price":1176,"amenities":["Parking","Laundromat","Water"],"address":"9865 Plymouth St. Windsor, QC J1S L9G"}
+{"petsAllowed":true,"type":"2/5","location":"Magog","price":693,"amenities":["Water","Balcony","fire","Laundromat"],"address":"9865 Plymouth St. Windsor, QC J1S L9G"}
+{"petsAllowed":false,"type":"1/4","location":"Quebec City","price":500,"amenities":["fire","Laundromat","Balcony"],"address":"20 Delaware Dr. Gaspé, QC G4X N7H"}
+{"petsAllowed":false,"type":"1/4","location":"Gatineau","price":998,"amenities":["Balcony","Laundromat","fire","Water"],"address":"76 Tailwater St. La Prairie, QC J5R H3H"}
+{"petsAllowed":false,"type":"1/4","location":"Magog","price":809,"amenities":["Parking","Water","Laundromat"],"address":"443 Walt Whitman Dr., Estrie-Ouest, QC J0E J4A"}
+{"petsAllowed":true,"type":"1/4","location":"Magog","price":361,"amenities":["Laundromat","Parking","fire","Water","BBQ","Balcony"],"address":"8129 Arcadia Road, Saint-Émile, QC G3E P5S"}
+{"petsAllowed":false,"type":"2/5","location":"Laurentides","price":548,"amenities":["fire","Balcony","BBQ","Laundromat","Parking"],"address":"475 Bayberry Street Sainte-Dorothée, QC H7X Y4X"}
+{"petsAllowed":false,"type":"1/4","location":"Gatineau","price":878,"amenities":["Laundromat","Balcony","fire","BBQ"],"address":"52 Queen Drive, Maisonneuve, QC H1V L8L"}
+{"petsAllowed":true,"type":"1/3","location":"Gatineau","price":979,"amenities":["BBQ","Laundromat","Balcony"],"address":"897 Harrison Street Gaspésie-Ouest, QC G0J L4H"}
+{"petsAllowed":false,"type":"1/2","location":"Mont-Tremblant","price":1073,"amenities":["Laundromat","BBQ","fire","Balcony"],"address":"938 Cherry Hill Street, Lac-Megantic, QC G6B N0A"}
+{"petsAllowed":true,"type":"1/4","location":"Laurentides","price":1013,"amenities":["Water","fire"],"address":"7834 Lafayette Ave. Port-Cartier, QC G5B R2M"}
+{"petsAllowed":false,"type":"1/2","location":"Magog","price":854,"amenities":["fire","Parking","BBQ","Water","Laundromat"],"address":"7834 Lafayette Ave. Port-Cartier, QC G5B R2M"}
+{"petsAllowed":false,"type":"1/2","location":"Laurentides","price":648,"amenities":["BBQ","Parking","Water","Balcony"],"address":"235 Lafayette St., Outremont, QC H2V B8P"}
+{"petsAllowed":false,"type":"1/4","location":"Gatineau","price":861,"amenities":["Laundromat"],"address":"938 Cherry Hill Street, Lac-Megantic, QC G6B N0A"}
+{"petsAllowed":false,"type":"1/3","location":"Mont-Tremblant","price":1059,"amenities":["Laundromat","BBQ"],"address":"20 Delaware Dr. Gaspé, QC G4X N7H"}
+{"petsAllowed":true,"type":"1/4","location":"Gatineau","price":436,"amenities":["Laundromat","Balcony"],"address":"8129 Arcadia Road, Saint-Émile, QC G3E P5S"}
+{"petsAllowed":true,"type":"2/5","location":"Mont-Tremblant","price":983,"amenities":["BBQ","Water","Balcony","Laundromat","fire"],"address":"235 Lafayette St., Outremont, QC H2V B8P"}
+{"petsAllowed":false,"type":"2/5","location":"Laurentides","price":1129,"amenities":["Parking","BBQ","Laundromat","Balcony"],"address":"90 Catherine Dr. Asbestos, QC J1T V8H"}
+{"petsAllowed":true,"type":"1/2","location":"Magog","price":1006,"amenities":["Balcony","Laundromat","Parking","BBQ"],"address":"20 Delaware Dr. Gaspé, QC G4X N7H"}
+{"petsAllowed":true,"type":"1/3","location":"Laurentides","price":431,"amenities":["Water"],"address":"20 Delaware Dr. Gaspé, QC G4X N7H"}
+{"petsAllowed":true,"type":"1/3","location":"Laurentides","price":764,"amenities":["BBQ","Water"],"address":"76 Tailwater St. La Prairie, QC J5R H3H"}

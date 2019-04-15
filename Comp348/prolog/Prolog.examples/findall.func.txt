@@ -1,0 +1,20 @@
+likes(bill,movies).
+likes(bill,walks).
+likes(jam,beer).
+likes(peter,beer).
+likes(peter, movies).
+likes(mike,soccer).
+likes(mikes,walks).
+likes(michael,cars).
+
+%quesry
+findall(X, likes(X, movies), L).
+
+
+
+
+
+%example 2: the rule is written based on parent data base represented in other codes
+% qualifies for benefit if you are a mother and you have equal or more than 3 children 
+
+qualifies-for-benifits(p):- woman(p), findall(p,parent(p),_), L), length (L,N), N>=3.

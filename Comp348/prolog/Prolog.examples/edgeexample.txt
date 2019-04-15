@@ -1,0 +1,10 @@
+edge(a,b).
+edge(b,c).
+edge(a,c).
+edge(c,d).
+edge(d,e).
+edge(f,e).
+edge(f,g).
+path(X,Y):- edge(X,Y); edge(X,Z),path(Z,Y). %% note ";" shows disjunction(or) relationship between two goals. Here we use recursion in defining the rule
+
+%% test different quieris for the path rule

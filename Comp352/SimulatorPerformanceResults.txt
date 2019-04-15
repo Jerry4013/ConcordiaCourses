@@ -1,0 +1,63 @@
+Unsorted List Priority Queue
+Current system time (cycles): 3918
+Total number of jobs executed: 100 jobs
+Average process waiting time: 2030 cycles
+Total number of priority changes: 3
+Actual system time needed to execute all jobs: 654.0 ms
+
+Sorted List Priority Queue
+Current system time (cycles): 3918
+Total number of jobs executed: 100 jobs
+Average process waiting time: 2030 cycles
+Total number of priority changes: 3
+Actual system time needed to execute all jobs: 187.0 ms
+
+ArrayList-based Heap Priority Queue
+Current system time (cycles): 3918
+Total number of jobs executed: 100 jobs
+Average process waiting time: 2025 cycles
+Total number of priority changes: 3
+Actual system time needed to execute all jobs: 179.0 ms
+
+Unsorted List Priority Queue
+Current system time (cycles): 54167
+Total number of jobs executed: 1000 jobs
+Average process waiting time: 29911 cycles
+Total number of priority changes: 32
+Actual system time needed to execute all jobs: 3117.0 ms
+
+Sorted List Priority Queue
+Current system time (cycles): 54167
+Total number of jobs executed: 1000 jobs
+Average process waiting time: 29911 cycles
+Total number of priority changes: 32
+Actual system time needed to execute all jobs: 1042.0 ms
+
+ArrayList-based Heap Priority Queue
+Current system time (cycles): 54167
+Total number of jobs executed: 1000 jobs
+Average process waiting time: 29803 cycles
+Total number of priority changes: 33
+Actual system time needed to execute all jobs: 864.0 ms
+
+Unsorted List Priority Queue
+Current system time (cycles): 262360
+Total number of jobs executed: 3000 jobs
+Average process waiting time: 156126 cycles
+Total number of priority changes: 97
+Actual system time needed to execute all jobs: 34505.0 ms
+
+Sorted List Priority Queue
+Current system time (cycles): 262360
+Total number of jobs executed: 3000 jobs
+Average process waiting time: 156126 cycles
+Total number of priority changes: 97
+Actual system time needed to execute all jobs: 16207.0 ms
+
+ArrayList-based Heap Priority Queue
+Current system time (cycles): 262360
+Total number of jobs executed: 3000 jobs
+Average process waiting time: 155701 cycles
+Total number of priority changes: 99
+Actual system time needed to execute all jobs: 1623.0 ms
+

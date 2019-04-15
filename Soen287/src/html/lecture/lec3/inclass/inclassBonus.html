@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+/* Sabrina Kim (40066662) ,Jingchao Zhang(40049474),Mohamed ABD EL AZIZ(40044161),
+Simon Anthony-Andraous(40044112 ) Jixuan Li(40073785), guanghui zhang(40067259) */
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <style type="text/css">
+    #whole {
+      border: 2em red;
+    }
+    td {padding: 0;}
+    table{border-collapse: collapse; font-weight:bolder;}
+    #red{color:red;}
+    #title{background-color: purple;width: 600px;height: 100px;color: white; text-align: center}
+    #footer{background-image: url("black.jpg");color: white;text-align: center;}
+    .left{background-color: beige;}
+    .left td{width: 125px; height: 150px; border: 3px solid green;}
+    #middle{background-color: coral;width: 50px; height: 300px}
+    .p21{background-image: url("butterfly.jpg");background-size:cover;}
+    .p22{background-image: url("yellow_fabric.gif"); background-size: cover;}
+    .p23{background-image: url("clouds2.jpg");}
+    .p24{background-color: skyblue;}
+    .p25{background-image: url("black.jpg");}
+    .p26{background-color: skyblue;}
+    .p27{background-image: url("raindrops_dark.gif");}
+    .p28{background-image: url("water.jpg");background-size: cover;}
+    .p29{background-image: url("greenwhite_paper.gif"); background-size: cover;}
+    .right{margin: initial;padding: initial;}
+    .right td{width: 100px; height: 100px; border: 3px solid #1e79fd;font-family: Arial; }
+    #green{color: green;}
+    .blue{color: blue;}
+    td.fat{width:300px; height:300px;}
+    .r1 td{color: #1e79fd; vertical-align: bottom}
+    .r2 td{color: black;vertical-align: middle; text-align: center;}
+    .r3 td{color: red; vertical-align: top; font-style: italic;}
+    .p22 {text-align:center; }
+    .p23{text-align: right;}
+    .p27{text-align: right;}
+    .p28{text-align: center;}
+    .size{font-size: large;}
+
+    td.mid{width: 125px ; height: 150px;}
+  </style>
+</head>
+<body>
+<table border="1" id="whole">
+  <tr>
+    <td id="title" colspan="2"><h1>Inclass table <br><span class="size">(600x100)</span></h1></td>
+  </tr>
+  <tr>
+    <td class = "fat">
+      <table class="left" border="1">
+        <tr>
+          <td class="mid"><img src="a-garfb.gif" alt="Can't find image"></td>
+          <td class="mid">
+            <ol>
+              <li id="red">red</li>
+              <ol type ="i">
+                <li>light</li>
+                <li>dark</li>
+              </ol>
+              <li id="green">green</li>
+              <li class="blue">blue</li>
+            </ol>
+            <span class="blue">125x150</span>
+          </td>
+          <td id="middle" rowspan="2">50 x 300</td>
+        </tr>
+        <tr>
+          <td class="mid">
+            <ol start ="4" type ="a">
+              <li><a href = "http://www.google.ca">Google</a></li>
+              <li><a href = "http://www.yahoo.com">Yahoo</a></li>
+              <li><a href = "http://www.concordia.ca">Concordia</a></li>
+            </ol>
+            125x150
+          </td>
+          <td class="mid">
+            <img src="house.gif" alt="" width="125" height="130">
+            125x150
+          </td>
+        </tr>
+      </table>
+    </td>
+    <td class = "fat">
+      <table border="1" class="right" >
+        <tr class="r1">
+          <td class="p21">100x100</td>
+          <td class="p22">100x100</td>
+          <td class="p23">100x100</td>
+        </tr>
+        <tr class="r2">
+          <td class="p24">100x100</td>
+          <td class="p25" style="color: white">100x100</td>
+          <td class="p26">100x100</td>
+        </tr>
+        <tr class="r3">
+          <td class="p27">100x100</td>
+          <td class="p28">100x100</td>
+          <td class="p29">100x100</td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td id="footer" colspan = "2"><h2>600x150 <span class="size">
+      Width 75%&height 10 pixels</span></h2></td>
+  </tr>
+</table>
+</body>
+</html>

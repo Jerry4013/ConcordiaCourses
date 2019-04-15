@@ -1,0 +1,10 @@
+brown(bear).
+gray(elephant).
+big(bear).
+big(elephant).
+black(cat).
+small(cat).
+dark(Z):-black(Z).
+dark(Z):-brown(Z).
+dangerous(X):-dark(X),big(X).
+%%test dangerous(Q).

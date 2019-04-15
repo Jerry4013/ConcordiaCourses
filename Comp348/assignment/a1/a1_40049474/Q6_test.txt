@@ -1,0 +1,80 @@
+1)
+connection(lax, nrt).
+true.
+
+connection(fco, cdg).
+false.
+
+connection(jfk, X).
+X = lax
+
+connection(X, lax).
+X = cdg
+
+
+2)
+flightTime(cdg,lax, 15, [cdg, lax]).
+true.
+
+flightTime(cdg,lax, 14, [cdg, lax]).
+false
+
+flightTime(fco,lax, Time, Path).
+
+Path = [fco, jfk, lax],
+Time = 22
+false
+
+
+flightTime(lju,nrt, Time, Path).
+
+Path = [lju, cdg, jfk, nrt],
+Time = 32
+Path = [lju, cdg, jfk, lax, nrt],
+Time = 37
+Path = [lju, cdg, lax, nrt],
+Time = 32
+Path = [lju, cdg, fco, jfk, nrt],
+Time = 38
+Path = [lju, cdg, fco, jfk, lax, nrt],
+Time = 43
+Path = [lju, cdg, fco, sin, nrt],
+Time = 33
+Path = [lju, fco, jfk, nrt],
+Time = 34
+Path = [lju, fco, jfk, lax, nrt],
+Time = 39
+Path = [lju, fco, sin, nrt],
+Time = 29
+
+3)
+pathLength([jfk,lax], 2469).
+true.
+
+pathLength([fco,cdg], 4568).
+false.
+
+pathLength([fco,jfk], X).
+X = 6244.
+
+pathLength([fco,jfk,lax], X).
+X = 6735
+
+4)
+shortestPath(fco, lax)
+[fco, jfk, lax]
+true
+
+shortestPath(cdg, nrt)
+[cdg, fco, sin, nrt]
+true
+
+shortestPath(lju, cdg)
+[lju, cdg]
+true
+
+shortestPath(cdg, lgu)
+false
+
+
+

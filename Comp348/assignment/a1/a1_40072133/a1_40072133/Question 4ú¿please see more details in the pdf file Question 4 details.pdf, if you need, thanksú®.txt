@@ -1,0 +1,50 @@
+Question 4 
+£¨please see more details in the pdf file Question 4 details.pdf, if you need, thanks£©
+1.exists(P), dateofbirth(P, date(_,_,Y)), Y<1963, salary(P, Salary), Salary<15000.
+
+Output:
+P = person(jack, fox, date(27, may, 1940), unemployed),
+Salary = 0,
+Y = 1940
+P = person(lily, armstrong, date(29, may, 1961), unemployed),
+Salary = 0,
+Y = 1961
+P = person(ann, cohen, date(29, may, 1961), unemployed),
+Salary = 0,
+Y = 1961
+P = person(anny, oliver, date(9, may, 1961), unemployed),
+Salary = 0,
+Y = 1961
+P = person(jane, fox, date(9, aug, 1941), works(ntu, 13050)),
+Salary = 13050,
+Y = 1941
+false
+
+2.exists(P), dateofbirth(P,date(_,_,Y)), !, Y<1998, salary(P,Salary), Salary<20000.
+
+Output:
+P = person(john, cohen, date(17, may, 1990), unemployed),
+Salary = 0,
+Y = 1990
+
+3.wife(person(GivenName, FamilyName, _, works(_,_))).
+
+Output:
+FamilyName = baily,
+GivenName = grace
+FamilyName = baily,
+GivenName = grace
+FamilyName = fox,
+GivenName = grace
+FamilyName = fox,
+GivenName = jane
+
+4.child(X), dateofbirth(X, date(_,_,1983)).
+
+Output:
+X = person(louie, baily, date(25, may, 1983), unemployed)
+X = person(louie, baily, date(25, may, 1983), unemployed)
+X = person(pat, cohen, date(5, may, 1983), works(bcd, 15200))
+X = person(jim, cohen, date(5, may, 1983), works(bcd, 15200))
+X = person(jimey, oliver, date(5, may, 1983), unemployed)
+false

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 3</title>
+    <style>
+        table, td, th {
+            border: 1px solid black;
+        }
+
+        table {
+            width: 50%;
+        }
+    </style>
+    <script>
+        document.write("<table>");
+        document.write("<tr>");
+        document.write("<td>number</td>");
+        for(var i = 1; i <= 5; i++){
+            document.write("<td>" + i + "</td>");
+        }
+        document.write("</tr>");
+        for(var i = 1; i <= 5; i++){
+            document.write("<tr>");
+            document.write("<td>" + i + "</td>")
+            for(var j = 1; j <= 5; j++){
+                document.write("<td>" + (i*j) + "</td>")
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+    </script>
+</head>
+<body>
+    <footer>
+        <p>Written by Sabrina Kim 40066662</p>
+    </footer>
+</body>
+</html>
+

@@ -1,0 +1,501 @@
+9.19
+    data:
+        first(X,[X|_]).
+    test:   first(a,[a,b,c]). -> true
+            first(b,[a,b,c]). -> false
+            first(a,[[a]]).   -> false  
+            first([a],[[a]]). -> true 
+            first([],[]).     -> false
+            first([],[[]]).   -> true
+
+    c(Arity is 3):->succeds if a list can be broken in a head and tail.
+    data:
+        c([H|T], H, T).
+    test:
+        c([a, b],a,[b]).->true
+        c([a, b],a,b).->false.
+        c([a, b],X,[b]).->X=a
+        c([a, b],a,X).->X = [b]
+        c([[a, b,c]],X,[]).->X = [a, b, c]
+        c([[a, b,c]],X,c).->false
+    
+    member(X,L) ->it succeds if X is a member of L
+        1. X is the head of the list
+        2. X is no the head of the list
+    data:
+        member(X,[X|_]).
+        member(X,[_|T]):-member(X,T).
+    test:
+        member(d,[a,b,c,d]).->true
+        member(X,[a,b,c,d]).->  X = a
+                                X = b
+                                X = c
+                                X = d
+                                false
+        member(a,[]).->false
+    
+    add(Arity:3) it succeeds if a new list can be created by placing an element
+                 as the head of some other list.
+    data:
+        add(X,L,[X|L]).
+    test:
+        add(a,[b,c],[b,c,a]).   ->false
+        add(a,[b,c],[a,b,c]).   ->true
+        add(a,[b,c],X).         ->X = [a, b, c]
+        add([],[a,b],[a,b]).    ->false
+        add([],[a,b],[[],a,b]). ->true
+
+    append(Arity:3) it concatenates two lists to form a new list(third list)
+                    append([a],[b],[a,b]).
+    data:
+        append([],L,L).
+        append([H|T],L,[H|N]):-append(T,L,N).
+    test:
+        append([a,b],[c,d],X).  -> X = [a, b, c, d] 
+        append([],[c,d],X).     -> X = [c, d]   
+
+9.19 Tutorial
+    and(1,0,0).
+    and(0,1,0).
+    and(0,0,0).
+    and(1,1,1).
+
+    or(1,0,1).
+    or(0,1,1).
+    or(0,0,0).
+    or(1,1,1).
+
+    inv(1,0).
+    inv(0,1).
+
+    nand(1,0,1).
+    nand(0,1,1).
+    nand(0,0,1).
+    nand(1,1,0).
+
+    nor(1,0,0).
+    nor(0,1,0).
+    nor(0,0,1).
+    nor(1,1,0).
+
+    xor(1,0,1).
+    xor(0,1,1).
+    xor(0,0,0).
+    xor(1,1,0).
+
+    %exampl#1
+    circuit(A,B,C,Out):-inv(C,Cinv),and(B,Cinv,BC),or(BC,A,Out).
+
+    %example#3
+    % result(A,B,C,F) :- xor(A, B, X1),xor(B, C, X2),nand(X1, X2, P1),inv(A,
+    % A1),inv(B, B1),nor(A1, B1, N1),nor(A, C, N2),or(N1, N2, P2),nand(P1,
+    % P2, F).
+
+    %example#4
+    % final(A, B, C, E, F, G, R) :- inv(A, A1),and(B, C, Cnt1),nand(A1, Cnt1,
+    % Cnt2),or(E, F, Cnt3),nand(Cnt2, Cnt3, T1),xor(Cnt3, G, T2),or(T1, T2,
+    % R).
+
+    %Query test for exampl#1
+    %?- circuit(1,0,0,1).
+    %true .
+
+    %Query test for exampl#3
+    %?-|    result(0,1,0,1).
+    %true .
+
+
+    %Query test for exampl#4
+    %?- final(0,1,1,0,0,1,1).
+    %true .
+
+9.24
+    append([1,2],[3,4],A).
+    append([1|[2]],[3,4],1|N):-append([2],[3,4],N).
+    append(2|[], [3,4],2|N1):-append([],[3,4],N1).
+    append([],[3,4],[3,4]).
+
+    size
+        size([],0).
+        size([H|T],N):-size(T,N1), N is N1 + 1.
+
+        test:
+        size([a,b,c,d], X).  -> X = 4
+        size(a|[b,c,d], X):-size([b,c,d],N1), N is N1 + 1.
+        size(b|[c,d], N1):-size([c,d],N2), N1 is N2 + 1.
+        size(c|[d], N2):-size([d],N3), N2 is N3 + 1.
+        size(d|[], N3):-size([],N4), N3 is N4 + 1.
+    
+    last
+        last(X,[X]).
+        last(X,[H|T]):-last(X,T).
+
+    backtracking
+        member(X,[X|_]).
+        member(X,[_|T]):- member(X,T).
+
+        member(X,[X|_]):-!.
+        member(X,[_|T]):- member(X,T).  
+
+        max(X,Y,X):-X>=Y.
+        max(X,Y,Y):-X<Y.
+
+
+9.24 Tutorial
+    first(F,[F]).
+    first(F,[F|_]).
+
+    last(X,[X]).
+    last(X,[H|T]):-last(X,T).
+
+    prefix(P,L):-append(P,_,L).
+    suffix(S,L):-append(_,S,L).
+
+    sublist
+
+
+
+9.26
+    data:
+        teaches(dr_fred, history).
+        teaches(dr_fred, english).
+        teaches(dr_fred, drama).
+        teaches(dr_fiona, physics).
+        teaches(dr_fiona, math).
+
+        studies(alice, english).
+        studies(angus, english).
+        studies(amelia, drama).
+        studies(alex, physics).
+    test:
+        teaches(dr_fred, Course), studies(Student, Course). 
+        ->
+            Course = english,
+            Student = alice
+            Course = english,
+            Student = angus
+            Course = drama,
+            Student = amelia
+
+        teaches(dr_fred, Course), !, studies(Student, Course). -> false
+        
+        The Query is cutted! No backtracking.
+
+        teaches(dr_fred, Course), studies(Student, Course), !. 
+        -> Course = english,
+           Student = alice  
+        
+        Cutting only after the first success.
+        Cut is a goal which always succeeds, but cannot be backtracked past.
+        Cut says stop looking for alternatives.
+
+    \+ negation
+        \+ (2==4).
+               
+    findall(X,P,L).
+    -> with all values for X that satisfies predicate P.
+
+    findall(X, man(X), L).
+    X:variable we are looking for
+    man(X): goal
+    L:List we found.
+
+    list_to_set(List, Set).
+    
+    setof(Y, P, Set).
+        
+    happy(fido).
+    happy(harry).
+    happy(X):-rich(X).
+    rich(harry).
+
+    setof(Y, happy(Y),Set).
+
+    length(List, L).
+    length([a,b,c,d],L). -> L = 4.
+
+    sort([n,m,a,b],L).
+
+    append([a,b],[c,d],L).
+
+    reverse([],[]).
+    reverse([H|T], R):-reverse(T,M),append(M,[H],R).    
+
+    delete([X|T],X,T).
+    delete(H|T,X,[H|Z]):-delete(T,X,Z).
+
+9.30
+    qualifies-for-benefits(p):-if p is a female parent and has more than 3 children.
+    qualifies-for-benefits(P):-woman(P), findall(P, parent(P,_),L),length(L, N), N >= 3.
+
+    digital circuit with prolog:
+    X --------
+              ]---AND-------OR------OUTPUT
+    Y ---NOT--          |
+       |                |
+       ------------------
+
+    Lisp:
+
+    list processing language
+    anything inside a parantheses is a function call- unless quoted
+    set {X} add_element(set, Y)
+    set = {X,Y}->
+
+    advantage:
+    tractable program, procedures are function, formulate 
+
+    disadvatage:
+    inefficiency:copying takes time
+    compiler implementation, frequent memory allocation.
+
+    basic types in Lisp: 
+        1. atom: symbol, word, number
+        2. list objects/expressions enclosed in paranthesis
+        3. string: sequence of characters with double quotes, "Hello"
+    
+    T: true in logical expressions
+    NIL: false in logical expressions, also reprsents an empty list().
+    (a (b c)) -> 2 elements
+    evaluation of basic types in Lisp
+    number-> self evaluated     5 --> 5
+    symbol-> evaluated to their binding or values
+    string-> self evaluated 
+
+    expressions in lisp are written through prefix notations:
+    (- 14 (* 2 3))
+
+    pure lisp, common lisp
+    functional programming
+    list processing language
+
+    lisp data types:    atom/symbol -> word or numbers
+                        list -> (a, b, c)
+                        String -> any sentence inside double quotes
+    
+    True/False: T
+                NIL means false in the logical comparison, also means empty list.
+    (+ 2 3): "+":function, the rest are parameters or arguments
+    '(/ (* 2 6) 3)  returns (/ (* 2 6) 3)
+    > (let ((x 5)) (or (< x 2) (> x 3))
+
+    create a list:
+        1. cons:
+        2. list:
+        3. append: 
+
+    (list 'a '()) returns (A NIL)
+    (list a 1)
+
+10.10
+    (print (append (cons 'a '()) (list 'b 'c))) -> (A B C)
+    (print (list '(NIL) '(a) '(b c) '() )) -> ((NIL) (A) (B C) NIL) 
+    (print (append(list 'a '(c d)) (cons 'f (list 'g (cons 'k '()))))) -> (A (C D) F G (K))
+    (print (car (cdr '(1 (3 5) (7 11))))) -> (3 5)
+    (print (cdr (append '() '() '()))) -> NIL
+    (print (CAR (cdr (cdr (append (list '() '(a)) (cons 'b (list (+ 2 3 4)))))))) -> B
+    
+    abs: absolut value
+        abs -3 -> 3
+    atom: returns true if its argument is an atom.
+        (atom 'a) -> T
+        (atom '(a b)) -> NIL
+        (atom '()) -> T
+    nullp: returns true if its argument is empty
+        (nullp NIL) -> T
+    equal: returns true if its argument have the same value
+        (equal 'a 'a)
+        (equal '(a b) '(a b))    
+    integerp: returns true if the number is an integer 
+
+    (if (listp '(a b c))
+        (+ 3 7)
+        (+ 1 3))
+
+    (cond
+        (test1 action1)
+        (test2 action2)
+        (test3 action3)
+        ...
+        (t default)
+    )
+    (print (cond 
+           ((listp a) (+ 3 7))
+           ((listp '(a b)) (+ 1 3))
+            (t (+ 4 5)))) -> 4
+    (print (cond 
+           ((> 5 10) (+ 1 3))
+           ((= 5 10) (+ 2 3))
+            (t (+ 6 6)))) -> 12
+
+    (let ((x 2) (y 3))
+        (+ x y))
+
+    (
+    print (let ((x 5))
+                (cond
+                    ((<= 6 x) (+ 1 2))
+                    (+ (+ 3 3))))
+    ) -> 6
+
+10.15
+    ITA based on lisp.
+    (defun name( formal parameter list )
+            body)
+    ex: 
+        (defun   ispalindrom(list)
+            (equal   list (reverse list)) 
+        call the function (ispalindrom '(a b c)) -> NIL
+                          (ispalindrom '(a b a)) -> T
+    function returns 3rd element of a list
+        (defun thirdelement (list)
+            (car (cdr(cdr list))))
+    mapcar
+        (mapcar #’* ’(2 3) ’(10 10))
+        -> (20 30)
+    funcall
+    apply
+
+    Anonymous functions:
+        ( lambda (formal parameter list) (body) )
+        ((lambda (x) (* x x)) 3) -> 9
+
+    Side effects in Common Lisp:
+        -> referential transparency: an expression function can be replaced by its value
+            (* 5 5)    25
+            x++;
+        -> idompotance: a function has the same effect if used multiple time, as if used only once.
+    setf x 5
+        setf is global
+        let is logical
+    eql will return true if its arguments point to the same object, same address.
+    
+    Control flow:
+        writing loops in lisp
+        (let ((n 0))
+            (loop
+                (when (> n 3) (return))
+                (print n) (write(* n n n))
+                (incf n)))
+        dotimes
+    
+    print next line
+    write same line
+    format t "y"
+10.22
+    3 ways to print in lisp:
+    (write)
+    (print)
+    (format t)
+
+    break in a block:textbook:P132
+        1.
+        (prog n
+            (setf x 5)
+            (format t "hello~%")
+            (format t "X is ~D" X)
+        )
+          ->~D: integer/decimal
+            ~A: string
+            ~S: anything
+        ->hello
+          x is 5
+
+        2. 
+        (block name
+            (...)
+            (return from name)        
+        )
+
+        3.
+        (tagbody
+            (self x 4)
+            top
+            (setf x (+ x 1))
+            (format t "~D" x)
+            (if (< x 10)(go top))
+        )
+
+    Recursion:
+        textbook P135
+        f(3) = (3 2 1 0)
+            = cons (3, f(2))
+                       cons (2 f(1))
+                               cons(1 f(0))
+                                      (0)
+    
+    (defun bsequence(n)
+        (if (= n 0)
+            (cons 0 '())
+            (cons n (bsequence(- n 1)))
+    )
+
+    (defun append2 (lst1 lst2)
+        (if (null lst1)
+            lst2
+            (cons (car lst1) (append2 (cdr lst1) lst2)))
+    )
+    
+    (defun reverse2 (lst)
+        (cond ((null lst) '())
+            (t (append (reverse2 (cdr lst)) (list (car lst))))))
+
+    (defun cube-list (lst)
+        (cond ((null lst) nil)
+            (t (let ((elt (car lst)))
+                (cons (* elt elt elt)
+                    (cube-list (cdr lst))))))
+    )
+
+10.22 Tutorial
+10.24
+    P145
+    (defun remove-first-occurrence (lst elt)
+        ((equal (car lst) elt) (cdr lst))
+        (t (cons (car lst)
+            (remove-first-occurrence (cdr lst) elt))))
+    
+    (defun remove-all-occurrence (lst elt)
+        (if (null lst)
+            nil
+            (if (equal (car lst) elt)
+                (remove))))
+
+    merge sort:
+    (defun )
+
+    P148 fibonacci:
+
+    set:PPT61 textbook P171: subset, setunion
+    bag-to-set
+    
+10.29
+    tree 
+    tree height
+    (defun tree-height(tree)
+        (if (or (null tree) 
+                (and (null (car (cdr tree)))
+                     (null (car (cdr tree))))))
+            0
+        (+ 1 (take-max (tree-height (car (cdr tree)))
+                        tree-height (car (cdr (cdr tree))))))
+        
+    sorting
+    bubble sort flag
+    linear search
+    binary search
+
+    Ruby
+    P427
+    puts: print
+    puts create a new line
+
+11.05
+    File.open("test.txt", "r") do |f|
+        f.readlines.each {|line| puts line}
+    end
+
+    Module
+    
+    
+    

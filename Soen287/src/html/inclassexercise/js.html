@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+    function f1() {
+      var num1 = document.getElementById("apple").value;
+      var num = num1 * 0.75;
+      return num;
+    }
+    function f2() {
+      var num2 = document.getElementById("apple").value;
+      var num = num2 * 0.6;
+      return num;
+    }
+    function f3() {
+      var num3 = document.getElementById("apple").value;
+      var num = num3 * 0.5;
+      return num;
+    }
+    function add() {
+      var sum = Number(f1()) + Number(f2()) + Number(f3());
+      alert("Thank you for your order\nYour total cost is: $" + sum);
+    }
+  </script>
+</head>
+<body>
+<form onsubmit="add();">
+  <label>Order Form</label><br><br>
+  <label><input type="number" id="apple" name="apple" onchange="f1();">Apples</label><br><br>
+  <label><input type="number" id="orange" name="orange" onchange="f2();">Oranges</label><br><br>
+  <label><input type="number" id="banana" name="banana" onchange="f3();">Bananas</label><br><br>
+  <input type="reset" value="Reset">
+  <input type="submit" value="Submit Query">
+</form>
+</body>
+</html>

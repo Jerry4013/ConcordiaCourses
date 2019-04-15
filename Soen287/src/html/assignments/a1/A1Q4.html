@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="Author" content="Jingchao Zhang"/>
+  <title>Cottage Search</title>
+  <style>
+    body { background-color: lightyellow;}
+    #RenterInfo {background-color: #c4d8cf; border-color: blue;}
+    #CottageInfo {background-color: rgba(192, 230, 245, 0.63); border-color: green;}
+    #rentLegend {color: blue;}
+    #CottageLegend{color: green;}
+    .prompt{font-weight:bolder;}
+    fieldset#RenterInfo label {color: rgba(30, 121, 253, 0.69)
+    }
+    fieldset#CottageInfo label {color: #70a66d
+    }
+  </style>
+</head>
+<body>
+<form>
+  <table>
+    <tr>
+      <td><a href="https://i2.wp.com/ceciliachoo.com/wp-content/uploads/2017/11/for-rent-portland-oregon.jpg?zoom=1.25&resize=795%2C530&ssl=1">
+        <img
+        src="https://i2.wp.com/ceciliachoo.com/wp-content/uploads/2017/11/for-rent-portland-oregon.jpg?zoom=1.25&resize=795%2C530&ssl=1"
+        alt="Cannot find the image" height="150" width="200"></a>
+      </td>
+      <td><h1>Cottage Search Form</h1></td>
+    </tr>
+  </table>
+  <fieldset id="RenterInfo">
+    <legend id="rentLegend">Renter(s) Information</legend>
+    <label class="prompt">How many people will come to this cottage?
+      <input type="number" name="number of renter"/>
+    </label>
+    <p>
+      <label class="prompt">Smoker?</label>
+      <label><input type="radio" name="smoker" value="yes">Yes</label>
+      <label><input type="radio" name="smoker" value="no">No</label>
+    </p>
+    <p>
+      <label class="prompt">Any pets?</label><br/>
+      <label><input type="checkbox" name="pets" value="cats">Cat(s)</label><br/>
+      <label><input type="checkbox" name="pets" value="dogs">Dog(s)</label><br/>
+      <label><input type="checkbox" name="pets" value="Other">Other </label>
+      <label class="prompt">Specify:<input type="text" name="other pets"></label><br/>
+      <label><input type="checkbox" name="pets" value="no">No Pets</label>
+    </p>
+  </fieldset>
+  <br>
+  <fieldset id="CottageInfo">
+    <legend id="CottageLegend">What are you looking for?</legend>
+    <ul>
+      <li>
+        <label class="prompt">Number of Bathrooms/Bedrooms:</label><br/>
+        <label><input type="checkbox" name="number of rooms" value="1/2">&frac12;</label>
+        <label><input type="checkbox" name="number of rooms" value="1/3">&frac13;</label>
+        <label><input type="checkbox" name="number of rooms" value="1/4">&frac14;</label>
+        <label><input type="checkbox" name="number of rooms" value="2/5">&frac25;</label>
+      </li>
+      <li>
+        <p>
+          <label class="prompt">Do you have preferred locations?</label><br/>
+          <label><input type="checkbox" name="location" value="Mont-Tremblant">Mont-Tremblant</label>
+          <label><input type="checkbox" name="location" value="Laurentides">Laurentides</label>
+          <label><input type="checkbox" name="location" value="Magog">Magog</label>
+          <label><input type="checkbox" name="location" value="Gatineau">Gatineau</label>
+          <label><input type="checkbox" name="location" value="Quebec City">Quebec City</label>
+          <label><input type="checkbox" name="location" value="Don't care">Don't care</label>
+        </p>
+      </li>
+      <li>
+        <p>
+          <label class="prompt">Price Range/Weekend <br>
+            <select name="price" id="price">
+              <option value="<500">&lt;$500</option>
+              <option value="500to800">$500-$800</option>
+              <option value="801to1000">$801-$1000</option>
+              <option value="1001to1200">$1001-$1200</option>
+              <option value="no price">No price limit</option>
+            </select>
+          </label>
+        </p>
+      </li>
+      <li>
+        <p>
+          <label class="prompt">Would be nice to have </label><br>
+          <label><input type="checkbox" name="nice" value="fire">Fire place</label>
+          <label><input type="checkbox" name="nice" value="Laundromat">Laundromat in building</label>
+          <label><input type="checkbox" name="nice" value="BBQ">BBQ</label>
+          <label><input type="checkbox" name="nice" value="Parking">Output Parking</label>
+          <label><input type="checkbox" name="nice" value="Balcony">Balcony</label>
+          <label><input type="checkbox" name="nice" value="Water">Water Front</label>
+        </p>
+      </li>
+    </ul>
+  </fieldset>
+  <p>
+    Let's see what we can find...
+  </p>
+  <p>
+    <input type="submit" value="Search">
+    <input type="reset" value="Start over">
+  </p>
+</form>
+</body>
+</html>

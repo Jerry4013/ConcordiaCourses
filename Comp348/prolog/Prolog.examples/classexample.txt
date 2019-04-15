@@ -1,0 +1,18 @@
+schedule(monday,programming).
+schedule(tuesday,math).
+schedule(tuesday,english).
+schedule(wednesday, programmer).
+schedule(wednesday, spanish).
+schedule(thursday,curcuits).
+scheule(friday,none).
+
+difficulty(programming,hard).
+difficulty(math,hard).
+difficulty(english,easy).
+difficulty(spanish,medium).
+difficulty(circuits,hard).
+
+classinformation(Day,Class,Diff):- schedule(Day,Class), difficulty(Class,Diff).
+
+
+%% test different (ground/non-ground) queries

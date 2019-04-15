@@ -1,0 +1,1 @@
+typeSearchIndex = [{"p":"assignment.a1","l":"OddonacciBad"}]

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+.example2{color: red; style}
+</style>
+<div class="example">First div element with class="example".</div>
+
+<div class="example">Second div element with class="example".</div>
+
+<div class="example2">Third div element with class="example2".</div>
+
+<p>Click the button to change the text of the first div element with class="example" (index 0).</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<p><strong>Note:</strong> The getElementsByClassName() method is not supported in Internet Explorer 8 and earlier versions.</p>
+
+<script>
+function myFunction() {
+    var x = document.getElementsByClassName("example");
+    x[0].innerHTML = "Hello World!";
+	//x[1].innerHTML = "bye World!";
+	x[1].setAttribute("class","example2");
+	//x[1].style.background= "yellow";
+	
+}
+</script>
+
+</body>
+</html>

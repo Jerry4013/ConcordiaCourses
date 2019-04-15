@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Numbers</title>
+  <script>
+    var counter = 0, mul3 = 0, mul5 = 0, num;
+    do {
+      num = prompt("Please enter a number: ","");
+      if (num == null || num == -1) {
+        break;
+      }
+      if (Number.isNaN(Number(num)) || num === "" ) {
+        continue;
+      }
+      counter++;
+      if (num % 3 == 0){
+        mul3++;
+      }
+      if (num % 5 == 0){
+        mul5++;
+      }
+    } while (num != -1);
+    document.write("you entered ", counter.toString(), " numbers <br /> multiple of 3: ",
+                  mul3.toString(), " numbers <br/> multiple of 5: ", mul5.toString(), " numbers");
+  </script>
+</head>
+<body>
+<footer>
+  <br><strong>Created by Jingchao Zhang - 40049474 - Assignment #2/Question 2</strong>
+</footer>
+</body>
+</html>

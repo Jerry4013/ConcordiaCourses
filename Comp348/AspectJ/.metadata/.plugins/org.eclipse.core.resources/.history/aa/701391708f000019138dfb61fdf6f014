@@ -1,0 +1,16 @@
+
+public aspect Logger {
+	pointcut mutators() : call(void Stack.push(String)) || 
+							call(String Stack.pop());
+	before():mutators(){
+		System.out.println(">Message sent to update stack.");
+	}
+	
+	before():call(String Human.reason()){
+		System.out.println(">Captured call to Human.reason(): " + thisJoinPoint);
+	}
+	
+	before() : call(String Bladerunner.reason()) {
+		System.out.println(">Captured call to Bladerunner.reason(): " + thisJoinPoint);
+	}
+}

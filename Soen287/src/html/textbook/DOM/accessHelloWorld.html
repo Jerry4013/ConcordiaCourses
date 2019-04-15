@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <script>
+    function getHello() {
+      var hello = document.getElementsByTagName("body")[0].firstChild.textContent;
+      alert(hello);
+    }
+  </script>
+</head>
+<body>
+Hello World! <br>
+<p>First another thing</p>
+<div>
+  <p>Second another thing</p>
+</div>
+<input type="button" value="click me!" onclick="getHello();">
+</body>
+</html>

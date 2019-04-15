@@ -1,0 +1,10 @@
+
+public class Driver {
+	public static void main(String[] args) {
+		Test1 test1 = new Test1("Hello");
+		System.out.println(test1.getTitle());
+		test1.setTitle("New title");
+		System.out.println(test1.getTitle());
+	}
+	
+}

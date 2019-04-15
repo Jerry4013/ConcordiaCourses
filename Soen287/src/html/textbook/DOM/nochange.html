@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>no change</title>
+  <script src="nochange.js"></script>
+  <style>
+    td, th, table {
+      border: thin solid black;
+    }
+  </style>
+</head>
+<body>
+<form action="">
+  <h3> Coffee Order Form </h3>
+  <table>
+    <tr>
+      <th> Product Name </th>
+      <th> Price </th>
+      <th> Quantity </th>
+    </tr>
+    <tr>
+      <th> French Vanilla (1 lb.) </th>
+      <td> $3.49 </td>
+      <td><input type="text" id="french" size="2"></td>
+    </tr>
+    <tr>
+      <th> Hazlenut Cream (1 lb.) </th>
+      <td> $3.95 </td>
+      <td><input type="text" id="hazlenut" size="2"></td>
+    </tr>
+    <tr>
+      <th> Colombian (1 lb.) </th>
+      <td> $4.59 </td>
+      <td><input type="text" id="colombian" size="2"></td>
+    </tr>
+  </table>
+  <p>
+    <input type="button" value="Total Cost" onclick="computeCost();" />
+    <input type="text" size="5" id="cost" onfocus="this.blur();">
+  </p>
+  <p>
+    <input type="submit" value="Submit Order" />
+    <input type="reset" value="Clear Order Form" />
+  </p>
+</form>
+
+</body>
+</html>

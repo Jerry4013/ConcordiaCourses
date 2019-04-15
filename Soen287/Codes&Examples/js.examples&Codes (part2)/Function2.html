@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!-- e4_14.html - A solution to Exercise 4.14 -->
+<html lang = "en">
+<head>
+  <title> Exercise 4.14 </title>
+  <meta charset = "utf-8" />
+  <script type = "text/javascript">
+  <!--
+  // Function reverser, parameter: a number
+  // Returns: the number with its digits in reverse order
+  // Note: Math.floor must be used to get the integer part
+  //       of the division operations
+
+  function reverser(num) {
+     var digit, position = 0;
+ 
+// If the number has just one digit, that's it
+   if (num < 10) 
+      return num;
+
+// Get the first digit
+   result = num % 10;
+   num = Math.floor(num / 10);
+// Loop to produce the result for the rest
+   do {
+      digit = num % 10;
+      result = 10 * result + digit;
+      num = Math.floor(num / 10);
+   } while (num >= 1);
+   return result;
+}
+// -->
+  </script>
+</head>
+
+<body>
+<script type = "text/javascript">
+<!--
+// Function reverser tester
+var num1 = 2468, num2 = 7;
+result = reverser(num1);
+document.write("The reverse of 2468 is: " + result + "<br />");
+result = reverser(num2);
+document.write("The reverse of 7 is: " + result + "<br />");
+document.write(result);
+// -->
+</script>
+</body>
+</html>

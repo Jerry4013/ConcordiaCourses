@@ -1,0 +1,14 @@
+body {
+  color: MediumBlue;
+}
+form {
+  background-color: LightSteelBlue;
+  width: 540px;
+  padding: 10px;
+}
+fieldset {
+  border: solid red;
+}
+
+
+

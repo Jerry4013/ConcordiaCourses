@@ -1,0 +1,109 @@
+body {
+    background-color: lightyellow;
+}
+
+#RenterInfo {
+    background-color: #c4d8cf;
+    border-color: blue;
+}
+
+#CottageInfo {
+    background-color: rgba(192, 230, 245, 0.63);
+    border-color: green;
+}
+
+#rentLegend {
+    color: blue;
+}
+
+#CottageLegend {
+    color: green;
+}
+
+.prompt {
+    font-weight: bolder;
+}
+
+fieldset#RenterInfo label {
+    color: rgba(30, 121, 253, 0.69)
+}
+
+
+fieldset#CottageInfo label {
+    color: #70a66d
+}
+
+#ExpertSuggestion {
+    display: none;
+    background-color: plum;
+    border-color: purple;
+    width: 95%;
+}
+
+#suggestionLegend {
+    color: purple;
+}
+
+.headerTable {
+    width: 100%;
+}
+
+.footer{
+    padding: 2px;
+    background-color: lightgray;
+    text-align: center;
+}
+
+.button {
+    background-color: #678baf;
+    border: none;
+    color: white;
+    padding: 5px 15px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #4b6680;
+}
+
+.loginButton{
+    text-align: right;
+}
+
+.loginTable{
+    margin: auto;
+}
+.loginUI{
+    height: 250px;
+    padding: 80px;
+}
+.loginLabel{
+    width: 30px;
+}
+.submitButtons,.hint{
+    text-align: center;
+}
+.star{
+    color: red;
+    visibility: hidden;
+}
+.welcome{
+    font-weight: bold;
+}
+.confirmUI{
+    text-align: center;
+    height: 250px;
+    padding: 100px;
+}
+#invalidHint{
+    color: red;
+}
+
+fieldset{
+    width: 98%;
+}
+.newLoginButton{
+    text-align: center;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Question 4</title>
+    <link rel = "stylesheet" type = "text/css" href = "Q4.css" />
+    <script>
+        var matched = 0;
+        function Patternmatch(input){
+            var rlymatch;
+            var rnematch;
+
+            for(var i = 0; i < input.length ; i++){
+                rlymatch = false;
+                rnematch = false;
+
+                if(input[i].search(/(ly)$/) != -1 && input[i].search(/[a]/) != -1)
+                    rlymatch = true;
+
+                if(input[i].search(/(ne)$/) != -1 && input[i].search(/[a]/) != -1)
+                    rnematch = true;
+
+                if(rlymatch || rnematch)
+                    matched++;
+            }
+
+            return matched;
+        }
+    </script>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Question 4 Solution</td>
+        </tr>
+    </table>
+    <br />
+    <script type = "text/javascript">
+        var names = new Array("bradly", "anna", "john", "sherly", "adriane");
+        var answer = Patternmatch(names);
+
+        document.write("The number of names having these two patterns (/ly$/)" +
+            "and (/ne$/) and at least one character 'a', in the array is : " + answer);
+
+        //names[0] = "bradly";
+        //names[1] = "anna";
+        //names[2] = "john";
+
+    </script>
+
+    <!--
+.Write a function Patternmatch in JS language declared in the document head section.
+.This function takes a parameter an array of strings called names.
+.This function returns the number of names in the given array that end in either
+."ly" or "ne" patterns and they have also at least one 'a' in their names.
+
+/[a](ly)$/ or /[a](ne)$/
+
+The test driver of the program must be defined as a script in the body section,
+.including the declaration of the array and the invocation of the function.
+.Use this following data of the array (names):
+
+.Names = "bradly", "anna", "john", "sherly", "adriane"
+
+.The array must be created as an instance of the class Array using the "new" operator.
+
+The program displays the result as follows: (the table on top has a dotted border style,
+the text and background have different colours
+and their colours are different from the border colour.
+Use a separate css file for the style.
+-->
+
+</body>
+</html>

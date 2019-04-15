@@ -1,0 +1,128 @@
+
+table{
+ border-collapse:collapse;
+}
+
+table,td,th{
+	border: thin ridge red;
+	padding:0; margin:0;
+}
+
+table.left{
+	border: medium ridge green;
+	background-color:#FFFACD;
+
+}
+table.left td{
+	border:medium ridge green;
+	width: 125px;
+	height: 150px;
+
+}
+
+table.left td.red{
+	background-color:#FA8072;
+	width:50px;
+	height:300px;
+}
+
+table.right{
+	border:medium ridge blue;
+	background-color:#FFFFFF;
+	font-weight: bolder;
+
+}
+table.right td{
+	font-family:sans-serif;
+	font-weight: bold;
+	border: medium ridge blue;
+	height: 100px;
+	width: 100px;
+
+}
+
+
+tr.Header{
+	background-color:#4B0082;
+	color: #E5E4E2; /*platinum*/
+	font-family: sans-serif;
+	width:600px;
+	height:100px;
+	text-align:center;
+	vertical-align: center;
+}
+
+tr.Bottom{
+	background-image:url('../img/black.jpg');
+	color: white;
+	width:600px;
+	height:150px;
+	text-align:center;
+}
+
+tr.rightFirst{
+	color:#0000FF;
+	vertical-align: bottom;
+	text-align:center;
+}
+
+tr.rightSecond{
+	background-color: #00FFFF;
+	text-align:center;
+}
+
+td.rightSecondmiddle{
+	background-image:url('../img/black.jpg');
+	text-align:center;
+  color: white;
+}
+
+
+tr.rightThird{
+	color:#FF0000;
+	font-style: italic;
+	vertical-align: top;
+	text-align:center;
+
+}
+
+td.cloudBg{
+	background-image:url('../img/clouds2.jpg');
+	text-align: right;
+}
+
+td.bubbleBg{
+	background-image:url('../img/raindrops_dark.gif');
+	text-align: right;
+}
+
+td.lefttxt{
+	text-align: left;
+}
+
+td.centertxt{
+	text-align: center;
+}
+
+ol ol{
+	list-style-type: lower-roman;
+}
+
+ol.alpha
+{
+	list-style-type: lower-alpha ;
+}
+
+span.redWord{
+	color:red;
+}
+span.greenWord{
+	color:green;
+}
+span.blueWord{
+	color:blue;
+}
+span.boldWord{
+	font-weight:bold;
+	font-size: 175%;
+}

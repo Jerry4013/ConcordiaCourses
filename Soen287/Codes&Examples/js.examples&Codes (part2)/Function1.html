@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- Example of a function and local/global demo -->
+<html lang = "en">
+	<head>
+		<title> Play with variable scopes </title>
+		<meta charset = "utf-8" />
+		<script type = "text/javascript">
+			<!--
+			num1 = 3;
+
+			function fcn1() {
+        num2 = 5;
+				return (num1 > num3);
+			}
+			// -->
+		</script>
+	</head>
+	<body>
+		<script type = "text/javascript">
+		<!--
+		// Function  tester
+			num3 = 1;
+			//num1 = 1;
+			document.write("The result of call is: " + fcn1() + "<br />");
+			document.write("The value in num1 is: " + num1 + "<br />");
+			document.write("The value in num2 is: " + num2 + "<br />");
+			document.write(" Result of num1>num2 is: " + (num1 > num2) + "<br />");
+		// -->
+		</script>
+	</body>
+</html>

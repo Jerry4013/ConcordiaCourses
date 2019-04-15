@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<!-- Exercise3.html
+     The HTML part of a solution to Exercise 6.3
+      -->
+<html lang = "en">
+  <head>
+    <title> Exercise 6.3 </title>
+
+    <style type = "text/css">
+
+/* A style for the paragraph of text */
+
+    .regtext {position: absolute; top: 200px; left: 100px;
+             font-family: Times; font-size: 14pt; width: 330px} 
+
+    </style>
+
+    <script type = "text/javascript"  src = "Exercise3.js" >
+    </script>
+    <meta charset = "utf-8" />
+  </head>
+
+  <body>
+
+    <h2> Background Image Visibility Control Buttons </h2>
+   
+    <form name = "visibilityControl">
+      <p>
+      <label> <input type = "checkbox"  name = "choser"
+                     onclick = "flipImage('northwest')" />
+        Northwest
+      </label>
+      <p/><p>
+      <label> <input type = "checkbox"  name = "choser"
+                     onclick = "flipImage('northeast')" />
+        Northeast
+      </label>
+      </p><p>
+      <label> <input type = "checkbox"  name = "choser"
+                     onclick = "flipImage('southeast')" />      
+        Southeast
+      </label>
+      </p><p>
+      <label> <input type = "checkbox"  name = "choser"
+                     onclick = "flipImage('southwest')" />
+        Southwest
+      </label>
+      </p>
+    </form>
+
+    <p id = "northwest"  style = "background-image: url(tree.jpg);
+       visibility: hidden;  position: absolute; 
+       left: 100px;  top: 200px;  width: 100px">
+       <br/><br/><br/><br/><br/>
+    </p>
+
+    <p id = "northeast"  style = "background-image: url(tree.jpg); 
+       visibility: hidden;  position: absolute; 
+       left: 300px;  top: 200px;  width: 100px">
+       <br/><br/><br/><br/><br/>
+    </p>
+
+    <p id = "southeast"  style = "background-image: url(tree.jpg); 
+       visibility: hidden;  position: absolute; 
+       left: 300px;  top: 350px;  width: 100px">
+       <br/><br/><br/><br/><br/>
+    </p>
+
+    <p id = "southwest"  style = "background-image: url(tree.jpg); 
+       visibility: hidden;  position: absolute; 
+       left: 100px;  top: 350px;  width: 100px">
+       <br/><br/><br/><br/><br/>
+    </p>
+
+  
+    <p class = "regtext">
+       I was born on July 4th, 
+       1976, in Huckabee, Alaska.
+       I have three brothers and
+       a sister, all older than I.
+       My sister, Mary, is 26 years old.
+       She lives in Kalkan, Montana.
+       My oldest brother, Ron, is 32
+       years old. He lives in Huckabee.
+       My youngest brother, Max, is 
+       28 years old. He lives in Pinkee,
+       Wyoming. My middle brother, Fred,
+       is 30 years old. He lives in
+       Kinkyhollow, Nebraska.
+       My parents, who are both still 
+       living, still live in Huckabee.
+    </p>
+
+  </body>
+</html>

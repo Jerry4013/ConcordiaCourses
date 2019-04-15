@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!-- mover.html
+     Uses mover.js to move an image within a document
+     -->
+<html lang = "en">
+  <head>
+    <title> Moving elements </title>
+    <meta charset = "utf-8" />
+    <script type = "text/javascript"  src = "mover.js" >
+    </script>
+	<style>
+	.pos {position:absolute; top:215px; left:5px;}
+	</style>
+  </head>
+  <body>
+    <form action = "">
+      <p>
+        <label>
+          x coordinate: 
+          <input type = "text"  id = "leftCoord" size = "3" />
+        </label>
+        <br />
+        <label>
+          y coordinate: 
+          <input type = "text"  id = "topCoord" size = "3" />
+        </label>
+        <br />
+        <input type = "button"  value = "Move elephant"
+               onclick = 
+                 "moveIt('elephant', 
+                   document.getElementById('topCoord').value, 
+                   document.getElementById('leftCoord').value)" />
+      </p>
+    </form>
+    <div id="elephant" class= "pos" >
+      <img src = "elephant.jpg" 
+           alt = "(Pictures of baby elephant)" /> 
+    </div>
+  </body>
+</html>

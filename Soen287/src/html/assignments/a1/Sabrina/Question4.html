@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Question 4</title>
+  <style type="text/css">
+    /* img {float: left;} */
+    body {
+      background-color: azure;
+    }
+
+    fieldset.one {
+      border: coral solid 2px;
+      background-color: antiquewhite;
+    }
+
+    fieldset.two {
+      border: salmon solid 2px;
+      background-color: beige;
+    }
+
+    legend.one {
+      color: coral;
+      font-size: large;
+    }
+
+    legend.two {
+      color: salmon;
+      font-size: large;
+    }
+
+    label.one {
+      color: lightcoral;
+    }
+
+    label.two {
+      color: lightsalmon;
+    }
+
+    label.bol {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<table>
+  <tr>
+    <td>
+      <a href="http://www.laurieshenkman.com/wp-content/uploads/2017/02/Rent1.png" target="_blank"><img
+        src="http://www.laurieshenkman.com/wp-content/uploads/2017/02/Rent1.png"/></a>
+    </td>
+    <td><h1>Cottage Search Form</h1></td>
+  </tr>
+</table>
+
+<form action="">
+  <fieldset class="one">
+    <legend class="one">Renter(s) Information</legend>
+    <label class="one bol">How many people will come to this cottage? </label><input type="number" name="numP"/>
+    <br/><br/>
+
+    <label class="one bol">Smoker?</label>
+    <label class="one"><input type="radio" name="smoker" value="yes"/>Yes</label>
+    <label class="one"><input type="radio" name="smoker" value="no"/>No</label>
+    <br/><br/>
+
+    <label class="one bol">Any pets?</label><br/>
+    <label class="one"><input type="checkbox" name="pets" value="cat"/>Cat(s)</label><br/>
+    <label class="one"><input type="checkbox" name="pets" value="dog"/>Dog(s)</label><br/>
+    <label class="one"><input type="checkbox" name="pets" value="other"/>Other</label>
+    <label class="one bol"> Specify: </label><input type="text" name="otherP"/> <br/>
+    <label class="one"><input type="checkbox" name="pets" value="none"/>No Pets</label>
+  </fieldset>
+  <br/>
+
+  <fieldset class="two">
+    <legend class="two">What are you looking for?</legend>
+    <ul>
+      <li>
+        <p>
+          <label class="two bol">Number of Bathrooms/Bedrooms:</label><br/>
+          <label class="two"><input type="checkbox" name="size" value="1/2"/>&frac12;</label>
+          <label class="two"><input type="checkbox" name="size" value="1/3"/>&frac13;</label>
+          <label class="two"><input type="checkbox" name="size" value="1/4"/>&frac14;</label>
+          <label class="two"><input type="checkbox" name="size" value="2/5"/>&frac25;</label>
+        </p>
+      </li>
+      <li>
+        <p>
+          <label class="two bol">Do you have preferred locations?</label><br/>
+          <label class="two"><input type="checkbox" name="location" value="MT"/>Mont-Tremblant</label>
+          <label class="two"><input type="checkbox" name="location" value="Lau"/>Laurentides</label>
+          <label class="two"><input type="checkbox" name="location" value="Mag"/>Magog</label>
+          <label class="two"><input type="checkbox" name="location" value="Gat"/>Gatineau</label>
+          <label class="two"><input type="checkbox" name="location" value="QC"/>Quebec City</label>
+          <label class="two"><input type="checkbox" name="location" value="DC"/>Don't Care</label>
+        </p>
+      </li>
+      <li>
+        <p>
+          <label class="two bol">Price Range/Weekend:
+            <select name="Price">
+              <option value="500"><$500</option>
+              <option value="1000"><$1000</option>
+              <option value="1500"><$1500</option>
+              <option value="NoLimit">No price limit</option>
+            </select>
+          </label>
+        </p>
+      </li>
+      <li>
+        <p>
+          <label class="two bol">Would be nice to have</label><br/>
+          <label class="two"><input type="checkbox" name="Nice" value="FP"/>Fire place</label>
+          <label class="two"><input type="checkbox" name="Nice" value="Laundromat"/>Laundromat in building</label>
+          <label class="two"><input type="checkbox" name="Nice" value="BBQ"/>BBQ</label>
+          <label class="two"><input type="checkbox" name="Nice" value="Park"/>Output Parking</label>
+          <label class="two"><input type="checkbox" name="Nice" value="Balc"/>Balcony</label>
+          <label class="two"><input type="checkbox" name="Nice" value="WF"/>Water Front</label>
+        </p>
+      </li>
+    </ul>
+  </fieldset>
+  <p>Let's see what we can find...</p>
+  <input type="submit" value="Search"/>
+  <input type="reset" value="Start over"/>
+</form>
+</body>
+</html>

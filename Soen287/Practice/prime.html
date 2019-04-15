@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>prime</title>
+</head>
+<body>
+<p id="title">
+    Prime number:
+</p>
+<script>
+    function isPrime(number) {
+        if (number === 1) return false;
+        for (var i = 2; i <= Math.floor(Math.sqrt(number)) ; i++) {
+            if (number % i === 0){
+                return false;
+            }
+        }
+        return true;
+    }
+
+    function primeLessThan(number){
+        for (var i = 1; i < number; i++) {
+            if (isPrime(i)){
+                document.write(i + ",");
+            }
+        }
+    }
+    primeLessThan(50);
+</script>
+</body>
+</html>

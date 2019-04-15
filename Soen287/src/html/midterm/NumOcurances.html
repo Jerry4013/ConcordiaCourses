@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>number of occurance</title>
+  <script>
+    function NumOccurances() {
+      var str = new String(arguments[0]);
+      var target = arguments[1];
+      var startIndex = arguments[2];
+      var counter = 0;
+      if (str == "" && startIndex == 0){
+        return 0;
+      }
+      if (startIndex > str.length - 1 ){
+        alert("Invalid start index");
+      }
+      for (var i = startIndex; i < str.length; i++) {
+        if (str.charAt(i).toLowerCase() == target.toLowerCase()) {
+          counter++;
+        }
+      }
+      return counter;
+    }
+  </script>
+</head>
+<body>
+<script>
+  var counter = NumOccurances("",'t',0);
+  document.write(counter.toString());
+</script>
+</body>
+</html>

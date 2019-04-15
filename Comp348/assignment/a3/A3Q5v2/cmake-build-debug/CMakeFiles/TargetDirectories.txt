@@ -1,0 +1,3 @@
+C:/Users/owner/OneDrive - Concordia University - Canada/ProgrammingProjects/ConcordiaCourse/Comp348/assignment/a3/A3Q5v2/cmake-build-debug/CMakeFiles/A3Q5v2.dir
+C:/Users/owner/OneDrive - Concordia University - Canada/ProgrammingProjects/ConcordiaCourse/Comp348/assignment/a3/A3Q5v2/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/owner/OneDrive - Concordia University - Canada/ProgrammingProjects/ConcordiaCourse/Comp348/assignment/a3/A3Q5v2/cmake-build-debug/CMakeFiles/rebuild_cache.dir
