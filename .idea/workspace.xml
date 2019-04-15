@@ -9,17 +9,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Comp346/Assignments/src/a3/Monitor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,8 +32,8 @@
         <subPane>
           <expand>
             <path>
-              <item name="ConcordiaCourse" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ConcordiaCourse" type="462c0819:PsiDirectoryNode" />
+              <item name="ConcordiaCourses" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ConcordiaCourses" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -52,6 +42,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553651264799" />
@@ -93,6 +84,7 @@
       <workItem from="1553648408837" duration="1253000" />
       <workItem from="1553649760574" duration="1504000" />
       <workItem from="1553653474259" duration="342000" />
+      <workItem from="1555333953245" duration="1009000" />
     </task>
     <task id="LOCAL-00001" summary="Classify files">
       <created>1553649137062</created>
@@ -112,12 +104,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3099000" />
+    <option name="totallyTimeSpent" value="4108000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="3832" y="-8" width="1936" height="1176" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25945947" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18421052" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -164,7 +156,7 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Comp346/Assignments/src/a3/Monitor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
+        <state relative-caret-position="629">
           <caret line="63" column="5" selection-start-line="63" selection-start-column="5" selection-end-line="63" selection-end-column="5" />
         </state>
       </provider>
