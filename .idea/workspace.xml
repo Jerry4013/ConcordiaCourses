@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9d8e9a7a-3b5c-4093-aa8c-1667a7a73ac5" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="9d8e9a7a-3b5c-4093-aa8c-1667a7a73ac5" name="Default Changelist" comment="second commit">
+      <change afterPath="$PROJECT_DIR$/Comp354/Comp354-Calculater/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comp354/Comp354-Calculater/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comp354/Comp354-Calculater/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comp354/Comp354-Calculater/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comp354/Comp354-Calculater/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comp354/Comp354-Calculater/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comp354/Comp354-Calculater/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comp354/Comp354-Calculater/src/main/java/concordia/comp354/calculator/CalculatorApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comp354/Comp354-Calculater/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comp354/Comp354-Calculater/src/test/java/concordia/comp354/calculator/CalculatorApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comp354/Comp354-Calculater/src/test/java/concordia/comp354/calculator/CalculatorApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comp354/Comp354-Calculater/src/test/java/concordia/comp354/calculator/CalculatorApplicationTests.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +26,17 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Comp348/c/main.c">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -33,6 +54,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -40,29 +62,10 @@
               <item name="ConcordiaCourses" type="b2602c69:ProjectViewProjectNode" />
               <item name="ConcordiaCourses" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="ConcordiaCourses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ConcordiaCourses" type="462c0819:PsiDirectoryNode" />
-              <item name="Comp249" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ConcordiaCourses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ConcordiaCourses" type="462c0819:PsiDirectoryNode" />
-              <item name="Comp249" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ConcordiaCourses" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ConcordiaCourses" type="462c0819:PsiDirectoryNode" />
-              <item name="Comp249" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="chapter8" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -70,13 +73,14 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553651264799" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zz/Java200/ztodo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -111,6 +115,7 @@
       <workItem from="1555333953245" duration="1009000" />
       <workItem from="1555335047669" duration="1429000" />
       <workItem from="1555693417448" duration="62000" />
+      <workItem from="1560708809014" duration="290000" />
     </task>
     <task id="LOCAL-00001" summary="Classify files">
       <created>1553649137062</created>
@@ -137,18 +142,19 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5599000" />
+    <option name="totallyTimeSpent" value="5889000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="3832" y="-8" width="1936" height="1176" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1895811" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19226637" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -161,6 +167,8 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" weight="0.6980854" />
+      <window_info anchor="right" id="Flutter Inspector" />
+      <window_info anchor="right" id="Flutter Outline" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -180,7 +188,6 @@
       <path value="$PROJECT_DIR$/Comp346" />
       <path value="$PROJECT_DIR$/Comp348/c" />
       <path value="$PROJECT_DIR$/Soen287" />
-      <path value="$PROJECT_DIR$" />
     </ignored-roots>
     <MESSAGE value="Classify files" />
     <MESSAGE value="Classify files 2" />
@@ -191,6 +198,13 @@
     <entry file="file://$PROJECT_DIR$/Comp346/Assignments/src/a3/Monitor.java" />
     <entry file="file://$PROJECT_DIR$/Comp248/Exercise/A1Q1_SignLoop.java">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Comp348/c/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
     </entry>
   </component>
 </project>
