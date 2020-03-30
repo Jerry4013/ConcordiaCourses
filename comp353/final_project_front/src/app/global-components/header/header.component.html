@@ -1,0 +1,21 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+        <span>Concordia SCC System</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button aria-label="Email btn" (click)="openEmailSideNav()" *ngIf="isLoggedIn">
+            <mat-icon class="example-icon">
+                message
+            </mat-icon>
+        </button>
+        <button mat-icon-button aria-label="Account btn" [matMenuTriggerFor]="appMenu" *ngIf="isLoggedIn">
+            <mat-icon class="example-icon">
+                account_box
+            </mat-icon>
+        </button>
+    </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-menu #appMenu="matMenu">
+    <button mat-menu-item (click)='editProfile()'>User Profile</button>
+    <button mat-menu-item (click)='logOut()'>Log Out</button>
+</mat-menu>

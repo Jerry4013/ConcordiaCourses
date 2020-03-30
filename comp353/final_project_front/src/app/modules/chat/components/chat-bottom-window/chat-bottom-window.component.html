@@ -1,0 +1,21 @@
+
+<div class="recepient-name">
+    <h3>{{getRecepientName()}}</h3>
+</div>
+
+<div class="message-wrapper" *ngIf="messages!==null" #scroll>
+    <div class="message-scroller">
+        <app-chat-bubble *ngFor="let message of messages" [message]='message'></app-chat-bubble>
+    </div>
+</div>
+
+<div class="input-box">
+    <mat-form-field class="example-full-width">
+        <input #inputArea matInput class="input-area" (keyup.enter)="sendMessage()" autocomplete="off">
+    </mat-form-field>
+    <button mat-button (click)='sendMessage()'>Send</button>
+</div>
+
+<div class="loader" *ngIf="!isReady">
+    <mat-spinner></mat-spinner>
+</div>

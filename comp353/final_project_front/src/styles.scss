@@ -1,0 +1,42 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; background-color: aliceblue;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.spacer{
+    flex: auto;
+}
+
+.loader{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+
+    .actions{
+        display: flex;
+        align-items: center;
+    }
+}
+
+.all-green{
+    color: green;
+}
+
+.icon-btn{
+    display: flex;
+    align-items: center;
+}
+
+.align-right{
+    display: flex;
+    justify-content: flex-end;
+}

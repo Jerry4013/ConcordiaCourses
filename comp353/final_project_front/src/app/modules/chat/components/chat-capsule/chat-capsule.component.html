@@ -1,0 +1,9 @@
+<div (click)='openChat()' class="capsule-wrapper">
+    <div class="target">{{getOther()}}</div>
+    <div class="message-content">
+        {{state.content}}
+    </div>
+    <div class="time-stamp">
+        {{state.sentTime | date:'short'}}
+    </div>
+</div>

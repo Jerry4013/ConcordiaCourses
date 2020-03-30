@@ -1,0 +1,17 @@
+.container {
+  margin-top: 20px;
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.container > * {
+  width: 80%;
+}
+
+.myButton {
+  width: 20px;
+}
+
+

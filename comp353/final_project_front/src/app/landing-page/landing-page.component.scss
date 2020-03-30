@@ -1,0 +1,24 @@
+:host{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.main-pannel{
+    width: 400px;
+    
+    ::ng-deep .mat-card{
+        padding: 26px;
+    }
+
+    .input-field{
+        width: 100%;
+        margin-bottom: 4px;
+    }
+}
+
+.pannel-actions{
+    display: flex;
+    justify-content: flex-end;
+}

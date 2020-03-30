@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/comp353-final-proj",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

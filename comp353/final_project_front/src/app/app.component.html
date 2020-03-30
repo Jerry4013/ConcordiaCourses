@@ -1,0 +1,27 @@
+
+
+<app-header (emailSideNavOnToggleEvent)="sidenav.toggle()"></app-header>
+
+<mat-sidenav-container 
+  class="side-nav-container side-nav-container--outer" 
+  (backdropClick)="close()">
+
+  <mat-sidenav #sidenav (keydown.escape)="close()" disableClose position="end" class="side-nav-wrapper">
+    <app-chat-window *ngIf="isLoggedIn"></app-chat-window>
+  </mat-sidenav>
+
+  <mat-sidenav-content>
+    <mat-drawer-container class="side-nav-container">
+      <mat-drawer mode="side" opened *ngIf="isLoggedIn">
+        <app-side-nav></app-side-nav>
+      </mat-drawer>
+      
+      <mat-drawer-content class="page-content">
+        <router-outlet></router-outlet>
+      </mat-drawer-content>
+    </mat-drawer-container>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+
+

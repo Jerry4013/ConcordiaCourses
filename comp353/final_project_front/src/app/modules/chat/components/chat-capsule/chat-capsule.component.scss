@@ -1,0 +1,29 @@
+:host{
+    display: block;
+    border-radius: 16px;
+    background-color: gainsboro;
+    padding: 12px;
+    height: 56px;
+    margin-bottom: 8px;
+}
+
+.capsule-wrapper{
+    cursor: pointer;
+}
+
+.target{
+    font-weight: bold;
+}
+
+.message-content{
+    margin-bottom: 8px;
+    color: #5a5858;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.time-stamp{
+    font-size: 12px;
+    float: right;
+}

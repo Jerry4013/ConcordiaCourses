@@ -1,0 +1,14 @@
+<div class="header">
+    <h3 autofocus>{{headerMessage}}</h3>
+    <div class="spacer"></div>
+    <button mat-icon-button aria-label="creat chat" class="create-chat-btn" (click)='createChat()'>
+        <mat-icon>add</mat-icon>
+    </button>
+</div>
+
+<div class="capsule-wrapper">
+    <div class="capsules-container">
+        <app-chat-capsule *ngFor="let capsule of chatCapsules" [state]='capsule'></app-chat-capsule>
+    </div>
+</div>
+

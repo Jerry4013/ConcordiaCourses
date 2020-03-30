@@ -1,0 +1,14 @@
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<div class="container-fluid">
+        <div class="row">
+            <div class="card" style="width:400px; text-align: center;" *ngFor="let p of posts" >
+                <img class="card-img-top" src="{{p.url}}" alt="Card image" style="width:350px;height:400px">
+                <div class="card-body">
+                <h4 class="card-title">Post</h4>
+                <p class="card-text">{{p.content | slice:0:34 }} ...</p>
+                <a routerLink="/post/{{p.id}}" class="btn btn-primary">View Post</a>
+            </div>               
+        </div>
+</div> 

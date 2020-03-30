@@ -1,0 +1,75 @@
+<div class="header">  
+  <h3>Event Details &nbsp; - &nbsp; {{event.title}} </h3>
+  <div class="actions">
+    <button mat-button color="primary" aria-label="leave group" (click)='createGroup()'>
+      <div class="icon-btn">
+        <mat-icon>add</mat-icon> Create Group
+      </div>
+    </button>
+    <button mat-button color="warn" aria-label="leave event" (click)='leaveEvent()'>
+      <div class="icon-btn">
+        <mat-icon>exit_to_app</mat-icon> Leave Event
+      </div>
+    </button>
+    <button mat-button color="primary" aria-label="go to list" (click)='goToList()'>
+      <div class="icon-btn">
+        <mat-icon>arrow_back_ios</mat-icon> Go to list
+      </div>
+    </button>
+  </div>
+</div>
+
+<mat-card class="tab-wrapper">
+  <mat-tab-group>
+    <mat-tab label="Details"> 
+      <mat-list role="list">
+        <mat-list-item role="listitem">
+          <span class="label">My Role:</span> &nbsp; 
+          <span class="detail">{{user.role}}</span>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <span class="label">Event Status:</span> &nbsp; 
+          <span class="detail">{{event.status}}</span>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <span class="label">Event Address:</span> &nbsp; 
+          <span class="detail">{{event.event_address}}</span>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <span class="label">Event Manager:</span> &nbsp; 
+          <span class="detail">{{event.event_manager}}</span>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <span class="label">Start Date:</span> &nbsp; 
+          <span class="detail">{{event.start_date | date}}</span>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <span class="label">End Date:</span> &nbsp; 
+          <span class="detail">{{event.end_date ? (event.end_date | date) : 'TBD'}}</span>
+        </mat-list-item>
+        <mat-list-item role="listitem">
+          <span class="label">Description:</span> &nbsp; 
+          <span class="detail">{{event.description}}</span>
+        </mat-list-item>
+      </mat-list>
+    </mat-tab>
+    <mat-tab label="Lobby"> 
+      
+    </mat-tab>
+    
+    <mat-tab label="Joined Groups">      
+      <mat-nav-list>
+        <mat-list-item *ngFor="let group of myGroups">
+            <a matLine href="...">{{group.title}}</a>
+        </mat-list-item>
+      </mat-nav-list>
+    </mat-tab>
+    
+    <mat-tab label="All Groups">
+      <mat-action-list >
+        <button mat-list-item *ngFor="let group of groups" (click)="joinGroup(group)"> Join </button>
+      </mat-action-list>
+    </mat-tab>
+    
+  </mat-tab-group>
+</mat-card>

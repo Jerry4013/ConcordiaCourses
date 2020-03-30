@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>Create a new event</h1>
+
+<form (ngSubmit)="submit()" [formGroup] = 'form'>
+    <div mat-dialog-content class="form-fields">
+        <mat-form-field>
+            <input matInput placeholder="Event Title" formControlName='title'>
+        </mat-form-field>
+
+        <mat-form-field>
+            <input matInput placeholder="Event Manager Email" formControlName='eventManager'>
+            <mat-error *ngIf="form.get('eventManager').invalid">Please enter a valid email address</mat-error>
+        </mat-form-field>
+
+        <mat-form-field>
+            <textarea matInput placeholder="Event Description" formControlName='description' class="text-area"></textarea>
+        </mat-form-field>
+    </div>
+    
+    <div mat-dialog-actions class="form-actions">
+        <button type="button" mat-button (click)="cancel()">Cancel</button>
+        <button type="submit" mat-button color="primary">Create Event</button>
+    </div>
+</form>

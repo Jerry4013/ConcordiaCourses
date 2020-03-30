@@ -1,0 +1,35 @@
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+<div class="container">
+    <div class="row col-md-6 col-md-offset-2 custyle">
+    <table class="table table-striped custab">
+    <thead>
+        <tr>
+            <th>Event Groups</th>
+            <th></th>
+        </tr>
+    </thead>
+
+            <tr *ngFor="let g of groups">
+
+                <td> {{ g.title }}</td>
+
+                <div class="row">
+                <div *ngIf="isMember(g); else elseBlock">
+                    <td class="text-center"><a class='btn btn-info btn-xs' routerLink="/posts/{{g.groupId}}"><span class="glyphicon glyphicon-edit"></span> View </a> <button (click)="leaveGroup(g)" class="btn btn-danger btn-xs"><span class="glyphicon glyphicon-remove"></span> Leave</button></td>
+                </div>
+                <ng-template #elseBlock>
+                    <div *ngIf="hasRequested(g); else elseBlock2">
+                        <td class="text-center"><button class='btn btn-info btn-xs'><span class="glyphicon glyphicon-edit"></span> Pending</button></td>
+                    </div>
+                    <ng-template #elseBlock2>
+                        <td class="text-center"><button class='btn btn-info btn-xs' (click)="joinGroup(g)"><span class="glyphicon glyphicon-edit"></span> Join</button></td>
+                    </ng-template>                    
+                </ng-template>
+                </div>
+                
+            </tr>
+    </table>
+    </div>
+</div>

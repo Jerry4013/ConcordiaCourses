@@ -1,0 +1,35 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+
+.recepient-name{
+    border-bottom: 1px solid gray;
+    margin-bottom: 12px;
+}
+
+.message-wrapper{
+    overflow: scroll;
+    padding-right: 12px;
+    height:100%;
+
+    .message-scroller{
+        height: 100%;
+    }
+}
+
+.input-box {
+    display: flex;
+
+    mat-form-field{
+        width: 100%;
+    }
+}
+
+.input-area{
+    resize: none;
+    height: 18px;
+}

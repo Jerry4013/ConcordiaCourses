@@ -1,0 +1,24 @@
+<form (ngSubmit)="onSubmit(f)" #f="ngForm" class="container" *ngIf="newEmailMode">
+  <mat-form-field>
+    <input ngModel class="form-control" name="recipient" matInput placeholder="To:">
+  </mat-form-field>
+  <mat-form-field>
+    <label>
+      <input ngModel class="form-control" name="title" matInput placeholder="Subject:">
+    </label>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Email Content</mat-label>
+    <textarea ngModel class="form-control" name="content" matInput matTextareaAutosize matAutosizeMinRows=20 matAutosizeMaxRows=40></textarea>
+  </mat-form-field>
+
+  <button type="submit" mat-raised-button color="primary">Send</button>
+</form>
+
+<div class="container" *ngIf="!newEmailMode">
+  <h3>{{email.title}}</h3>
+  <h4>From: {{email.sender}}</h4>
+  <h4>To: {{email.recipient}}</h4>
+  <p>{{email.content}}</p>
+</div>

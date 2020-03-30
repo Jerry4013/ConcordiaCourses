@@ -1,0 +1,13 @@
+.form-fields{
+    display: flex;
+    flex-direction: column;
+}
+
+.form-actions{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.text-area{
+    height: 100px;
+}

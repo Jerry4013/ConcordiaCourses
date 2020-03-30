@@ -1,0 +1,37 @@
+mat-form-field{
+    display: block;
+}
+
+.stepper-wrapper{
+    width: 100%;
+
+    .step-content{
+        min-height: 170px;
+
+        .add-participant-field{
+            width: 100%;
+            margin-bottom: 8px;
+        }
+    }
+}
+.form-fields{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    mat-form-field{
+        flex: 0 48%;
+
+        &.full-width{
+            flex: 0 100%;
+        }
+    }
+
+    textarea{
+        height: 50px;
+    }
+}
+.form-actions {
+    display: flex;
+    justify-content: flex-end;
+}

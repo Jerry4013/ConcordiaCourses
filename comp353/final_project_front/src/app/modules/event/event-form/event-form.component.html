@@ -1,0 +1,99 @@
+<mat-card>
+    <form (ngSubmit)="onSubmit()" [formGroup] = 'eventForm'>
+        <mat-horizontal-stepper #stepper class="stepper-wrapper">
+            <mat-step>
+                <ng-template matStepLabel>Basic Info</ng-template>
+                <div class="form-fields step-content">
+                    <mat-form-field> 
+                        <input formControlName="id" matInput placeholder="ID">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="status" matInput placeholder="Status">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="title" matInput placeholder="Title" required>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="eventManager" matInput placeholder="Event Manager" required>
+                    </mat-form-field>
+                    <mat-form-field class="full-width">
+                        <textarea formControlName="description" matInput placeholder="Description" required></textarea>
+                    </mat-form-field>
+                </div>
+            </mat-step>
+            
+            <mat-step>
+                <ng-template matStepLabel>Details</ng-template>
+                <div class="form-fields step-content">
+                    <mat-form-field>
+                        <input formControlName="startDate" matInput placeholder="Start Date">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="endDate" matInput placeholder="End Date">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="organizationType" matInput placeholder="Organization Type">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="eventAddress" matInput placeholder="Event Address">
+                    </mat-form-field>
+                </div>
+            </mat-step>
+
+            <mat-step>
+                <ng-template matStepLabel>Resources</ng-template>
+                <div class="form-fields step-content">
+                    <mat-form-field>
+                        <input formControlName="bankName" matInput placeholder="Bank Name">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="bankAccount" matInput placeholder="Bank Account Number">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="storageUsed" matInput placeholder="Storage Used">
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input formControlName="bandwidthUsed" matInput placeholder="Bandwidth Used">
+                    </mat-form-field>
+                </div>
+            </mat-step>
+
+            <mat-step>
+                <ng-template matStepLabel>Participants</ng-template>
+                <div class="step-content">
+                    <mat-form-field class="add-participant-field">
+                        <input matInput placeholder="User Email" [formControl]="participantControl">
+                        <mat-error *ngIf="participantControl.invalid">Invalid User Email</mat-error>
+                        <button type="button" matSuffix mat-button color="primary" aria-label="add participant" (click)='addParticipant()'>
+                            <div class="icon-btn">
+                                <mat-icon>add</mat-icon> Add Participant
+                            </div>
+                        </button>
+                    </mat-form-field>
+    
+                    <mat-chip-list #chipList>
+                        <mat-chip 
+                            [color]="isSelf(participant.email)? 'primary' : ''" selected 
+                            *ngFor="let participant of participants" 
+                            [removable]="!isSelf(participant.email)" 
+                            (removed)="removeParticipant(participant.email)"
+                        >
+                            <span *ngIf="isSelf(participant.email);else other">
+                                Me
+                            </span>
+                            <ng-template #other>
+                                ({{participant.name}}) &nbsp; {{participant.email}}
+                            </ng-template>
+                            <mat-icon matChipRemove *ngIf="!isSelf(participant.email)">cancel</mat-icon>
+                        </mat-chip>
+                    </mat-chip-list>
+                </div>
+            </mat-step>
+        </mat-horizontal-stepper>
+        <mat-action-row>
+            <button type="button" mat-button (click)="resetEvent()">Cancel</button>
+            <button type="button" mat-button color="warn" (click)="deleteEvent()">Delete</button>
+            <button type="submit" mat-button color="primary">Edit Event</button>
+        </mat-action-row>
+    </form>
+</mat-card>

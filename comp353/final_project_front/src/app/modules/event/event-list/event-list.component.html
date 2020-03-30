@@ -1,0 +1,59 @@
+<div class="header">  
+  <h3>Manage Your Events</h3>
+  <button mat-button color="primary" aria-label="create event" (click)='createEvent()' *ngIf="isAdmin">
+    <div class="icon-btn">
+      <mat-icon>add</mat-icon> Create Event
+    </div>
+  </button>
+</div>
+
+<mat-card class="tab-content">
+  <mat-tab-group [selectedIndex] = tabIndex>
+    <mat-tab label="My Events">
+      <mat-action-list>
+        <mat-list-item *ngFor="let event of myEvents" (click)="goToDetails(event)">
+          <div class="event-row"> 
+            <div>
+              {{event.title}}
+            </div>
+            <div>
+              <span>
+                {{event.start_date | date}}
+              </span>
+              <span *ngIf='event.end_date'>
+                -   {{event.end_date | date}}
+              </span>
+              <span *ngIf='!event.end_date'>
+                -   TBD
+              </span>
+            </div>
+          </div>
+        </mat-list-item>
+      </mat-action-list>
+    </mat-tab>
+    <mat-tab label="Managed Events">
+      <mat-accordion class="event-list">
+        <mat-expansion-panel *ngFor='let event of managedEvents' hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title>
+              {{event.title}}
+            </mat-panel-title>
+
+            <mat-panel-description>
+              {{event.event_manager}}
+            </mat-panel-description>
+
+            <mat-icon color="warn" *ngIf='isMissingInfo(event)' matTooltip="Event details missing">priority_high</mat-icon>
+            <mat-icon color="primary" *ngIf='isAdmin' matTooltip="You have full access">public</mat-icon>
+            <mat-icon color="accent" *ngIf='!isAdmin' matTooltip="You have limited access">vpn_lock</mat-icon>
+          </mat-expansion-panel-header>
+          
+          <app-event-form (onFormSubmit)="handleFormData($event)" [eventData]='event'></app-event-form>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-tab>
+    <mat-tab label="Archieved Event"> 
+      <!-- <app-event-form (onFormSubmit)="handleFormData($event)"></app-event-form> -->
+    </mat-tab>
+  </mat-tab-group>
+</mat-card>

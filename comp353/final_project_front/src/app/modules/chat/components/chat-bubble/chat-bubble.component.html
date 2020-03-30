@@ -1,0 +1,6 @@
+<div class="message-wrapper" [ngClass]="{'message-wrapper--right': isSelf()}">
+    <div class="message-content">
+        {{message.content}}
+    </div>
+    <div class="time-stamp">{{message.sentTime | date:'short'}}</div>
+</div>
