@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.soen387.a2.repository.BookJpaRepository</OriginalElement>
+  <nodes>
+    <node x="0.0" y="699.0">org.springframework.data.repository.query.QueryByExampleExecutor</node>
+    <node x="1.4807692307692832" y="1528.0">com.soen387.a2.repository.UserInfoJpaRepository</node>
+    <node x="414.0" y="773.0">org.springframework.data.repository.PagingAndSortingRepository</node>
+    <node x="312.75" y="96.0">org.springframework.data.repository.Repository</node>
+    <node x="329.25" y="0.0">org.springframework.stereotype.Indexed</node>
+    <node x="312.25" y="192.0">org.springframework.data.repository.CrudRepository</node>
+    <node x="79.98076923076923" y="1206.0">org.springframework.stereotype.Repository</node>
+    <node x="422.5" y="1021.0">org.springframework.data.jpa.repository.JpaRepository</node>
+    <node x="483.25" y="1528.0">com.soen387.a2.repository.BookJpaRepository</node>
+    <node x="574.875" y="96.0">org.springframework.data.repository.NoRepositoryBean</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.soen387.a2.repository.BookJpaRepository" target="org.springframework.stereotype.Repository">
+      <point x="-65.25" y="-43.5" />
+      <point x="548.5" y="1498.0" />
+      <point x="217.23076923076923" y="1498.0" />
+      <point x="45.75" y="43.5" />
+    </edge>
+    <edge source="org.springframework.data.jpa.repository.JpaRepository" target="org.springframework.data.repository.NoRepositoryBean">
+      <point x="114.0" y="-228.5" />
+      <point x="707.5" y="996.0" />
+      <point x="783.5" y="996.0" />
+      <point x="783.5" y="167.0" />
+      <point x="782.375" y="167.0" />
+      <point x="83.00000000000003" y="23.0" />
+    </edge>
+    <edge source="com.soen387.a2.repository.UserInfoJpaRepository" target="org.springframework.data.jpa.repository.JpaRepository">
+      <point x="124.25" y="-43.5" />
+      <point x="374.2307692307693" y="1508.0" />
+      <point x="508.0" y="1508.0" />
+      <point x="-85.5" y="228.5" />
+    </edge>
+    <edge source="org.springframework.data.repository.CrudRepository" target="org.springframework.data.repository.Repository">
+      <point x="-92.0" y="-228.5" />
+      <point x="0.0" y="23.0" />
+    </edge>
+    <edge source="org.springframework.data.jpa.repository.JpaRepository" target="org.springframework.data.repository.query.QueryByExampleExecutor">
+      <point x="-114.0" y="-228.5" />
+      <point x="479.5" y="996.0" />
+      <point x="197.0" y="996.0" />
+      <point x="0.0" y="136.0" />
+    </edge>
+    <edge source="org.springframework.data.repository.PagingAndSortingRepository" target="org.springframework.data.repository.CrudRepository">
+      <point x="-89.75" y="-62.0" />
+      <point x="503.75" y="674.0" />
+      <point x="496.25" y="674.0" />
+      <point x="0.0" y="228.5" />
+    </edge>
+    <edge source="com.soen387.a2.repository.UserInfoJpaRepository" target="org.springframework.stereotype.Repository">
+      <point x="-124.25" y="-43.5" />
+      <point x="-45.75" y="43.5" />
+    </edge>
+    <edge source="org.springframework.data.jpa.repository.JpaRepository" target="org.springframework.data.repository.PagingAndSortingRepository">
+      <point x="0.0" y="-228.5" />
+      <point x="0.0" y="62.0" />
+    </edge>
+    <edge source="org.springframework.data.repository.CrudRepository" target="org.springframework.data.repository.NoRepositoryBean">
+      <point x="92.0" y="-228.5" />
+      <point x="588.25" y="167.0" />
+      <point x="616.375" y="167.0" />
+      <point x="-83.0" y="23.0" />
+    </edge>
+    <edge source="org.springframework.data.repository.Repository" target="org.springframework.stereotype.Indexed">
+      <point x="0.0" y="-23.0" />
+      <point x="0.0" y="23.0" />
+    </edge>
+    <edge source="com.soen387.a2.repository.BookJpaRepository" target="org.springframework.data.jpa.repository.JpaRepository">
+      <point x="65.25" y="-43.5" />
+      <point x="85.5" y="228.5" />
+    </edge>
+    <edge source="org.springframework.data.repository.PagingAndSortingRepository" target="org.springframework.data.repository.NoRepositoryBean">
+      <point x="89.75" y="-62.0" />
+      <point x="683.25" y="674.0" />
+      <point x="690.75" y="674.0" />
+      <point x="690.75" y="167.0" />
+      <point x="699.375" y="167.0" />
+      <point x="0.0" y="23.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="385.0" y="1165.0" />
+  <SelectedNodes>
+    <node>com.soen387.a2.repository.BookJpaRepository</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

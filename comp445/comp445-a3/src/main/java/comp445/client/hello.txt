@@ -1,0 +1,56 @@
+
+Sun Oct 06 11:06:34 EDT 2019
+
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Sun, 06 Oct 2019 15:06:34 GMT
+Referrer-Policy: no-referrer-when-downgrade
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Content-Length: 274
+Connection: Close
+
+{
+  "args": {
+    "assignment": "1", 
+    "course": "networking"
+  }, 
+  "headers": {
+    "Host": "httpbin.org", 
+    "User-Agent": "Concordia-HTTP/1.0"
+  }, 
+  "origin": "66.131.255.217, 66.131.255.217", 
+  "url": "https://httpbin.org/get?course=networking&assignment=1"
+}
+
+Sun Oct 06 11:42:26 EDT 2019
+
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Sun, 06 Oct 2019 15:42:26 GMT
+Referrer-Policy: no-referrer-when-downgrade
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Content-Length: 274
+Connection: Close
+
+{
+  "args": {
+    "assignment": "1", 
+    "course": "networking"
+  }, 
+  "headers": {
+    "Host": "httpbin.org", 
+    "User-Agent": "Concordia-HTTP/1.0"
+  }, 
+  "origin": "66.131.255.217, 66.131.255.217", 
+  "url": "https://httpbin.org/get?course=networking&assignment=1"
+}

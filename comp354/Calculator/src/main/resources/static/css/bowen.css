@@ -1,0 +1,45 @@
+body{
+    /*background:  #b3d4fc;*/
+    /*background:  lightgreen;*/
+}
+#Calculator_container{
+    background-color: aliceblue;
+    /*width: 70%;*/
+}
+.white{
+    background-color: white;
+    font-weight: bold;
+}
+.input1{
+    height: 80px;
+    font-size: 18pt;
+}
+button
+{
+    height: 50px;
+    width: 100%;
+}
+.spannew{
+    padding: 3px;
+}
+.rowspace
+{
+    margin-bottom: 3px;
+}
+.buttompadding1{
+    padding-left: 5px
+}
+.inputbottom{
+    margin-bottom: 10px;
+}
+input{
+    text-align: right;
+}
+input::-webkit-input-placeholder { /* WebKit browsers */
+    direction: rtl;
+}
+.calculator
+{
+    border: solid #ccc 1px;
+    margin: 10px auto;
+}

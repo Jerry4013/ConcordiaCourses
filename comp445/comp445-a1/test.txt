@@ -1,0 +1,62 @@
+
+Sun Oct 06 09:48:25 EDT 2019
+
+HTTP/1.1 301 MOVED PERMANENTLY
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Date: Sun, 06 Oct 2019 13:48:25 GMT
+location: /redirect/1
+Referrer-Policy: no-referrer-when-downgrade
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Content-Length: 0
+Connection: Close
+
+
+Sun Oct 06 09:48:25 EDT 2019
+
+HTTP/1.1 302 FOUND
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Content-Type: text/html; charset=utf-8
+Date: Sun, 06 Oct 2019 13:48:25 GMT
+Location: /get
+Referrer-Policy: no-referrer-when-downgrade
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Content-Length: 215
+Connection: Close
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<title>Redirecting...</title>
+<h1>Redirecting...</h1>
+<p>You should be redirected automatically to target URL: <a href="/get">/get</a>.  If not click the link.
+
+Sun Oct 06 09:48:25 EDT 2019
+
+HTTP/1.1 200 OK
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Origin: *
+Content-Type: application/json
+Date: Sun, 06 Oct 2019 13:48:25 GMT
+Referrer-Policy: no-referrer-when-downgrade
+Server: nginx
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+X-XSS-Protection: 1; mode=block
+Content-Length: 189
+Connection: Close
+
+{
+  "args": {}, 
+  "headers": {
+    "Host": "httpbin.org", 
+    "User-Agent": "Concordia-HTTP/1.0"
+  }, 
+  "origin": "66.131.255.217, 66.131.255.217", 
+  "url": "https://httpbin.org/get"
+}

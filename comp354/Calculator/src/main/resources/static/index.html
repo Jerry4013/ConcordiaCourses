@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/zui.js"></script>
+    <link rel="stylesheet" href="css/zui.css">
+    <link rel="stylesheet"
+          href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+          integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+          crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bowen.css">
+    <script src="js/jingchao.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div style="margin:0 auto" >
+        <h1>Online calculator<i class="fas fa-home"></i></h1>
+        <h3>Group Name: Skynet </h3>
+        <h3>Group member: Ji Shen, Xue Han, Tao Jiang,
+            Jingchao Zhang, Bowen Yang, Jixuan Li</h3>
+    </div>
+</div>
+
+<div class="container calculator" id="Calculator_container">
+
+    <legend>Skynet<i class="fas fa-satellite-dish"></i></legend>
+    <div class="input-control has-label-left inputbottom">
+        <input id="operand" type="text" class="form-control input1" placeholder="0">
+    </div>
+
+
+    <div class="row rowspace" >
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="sin" class="btn" type="button">sin</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="cos" class="btn" type="button" >cos</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="tan" class="btn" type="button" >tan</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="sinh" class="btn" type="button">sinh</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="cosh" class="btn" type="button">cosh</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="tanh" class="btn" type="button" >tanh</button>
+        </span>
+    </div>
+    <div class="row rowspace" >
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="square" class="btn" type="button">x^2</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="cube" class="btn" type="button">x^3</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="log" class="btn buttompadding1 clear" type="button" >log</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="ce" class="btn btn-danger clear" type="button" >CE</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="c" class="btn btn-danger clear" type="button" >C</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="division" class="btn  " type="button" >/</button>
+        </span>     
+    </div>
+    <div class="row rowspace" >
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="sqrt" class="btn" type="button" >√x</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="tenPower" class="btn" type="button">10<sup>x</sup></button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="seven" class="btn white" type="button" >7</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="eight" class="btn white" type="button" >8</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="nine" class="btn white" type="button" >9</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="multiplication" class="btn  " type="button" >*</button>
+        </span>
+    </div>
+    <div class="row rowspace" >
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="ln" class="btn" type="button" >ln</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="exp" class="btn" type="button" >e<sup>x</sup></button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="four" class="btn white" type="button" >4</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="five" class="btn white" type="button" >5</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="six" class="btn white" type="button" >6</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="subtraction" class="btn" type="button">-</button>
+        </span>
+    </div>
+    <div class="row rowspace" >
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="pi" class="btn" type="button">π</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="factorial" class="btn" type="button" >n!</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="one" class="btn white" type="button" >1</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="two" class="btn  white " type="button" >2</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="three" class="btn  white " type="button" >3</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="addition" class="btn" type="button" >+</button>
+        </span>
+    </div>
+    <div class="row rowspace" >
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="negation" class="btn" type="button">±</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="left" class="btn" type="button" >(</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="right" class="btn" type="button" >)</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="zero" class="btn white" type="button" >0</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="dot" class="btn" type="button" >.</button>
+        </span>
+        <span class="col-lg-2 col-md-2 col-sm-2 col-xs-2 spannew">
+            <button id="equal" class="btn btn-primary" type="button" >=</button>
+        </span>
+    </div>
+</div>
+</body>
+</html>

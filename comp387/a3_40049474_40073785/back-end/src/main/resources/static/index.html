@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+<body>
+<p id="demo">Let AJAX change this text.</p>
+
+<button type="button" onclick="loadDoc()">Change Content</button>
+
+<script>
+    async function loadDoc() {
+        // try{
+        //     const res = await fetch('http://localhost:8080/book/listAllWithoutCover');
+        //     const data = await res.text();
+        //     document.getElementById("demo").innerHTML = data;
+        // } catch(error) {
+        //     console.log('Error:'+ error);
+        // }
+
+        // await fetch('http://localhost:8080/book/listAllWithoutCover')
+        //     .then(data => console.log(data.text()))
+        //     .catch(error => console.log('Error:'+error));
+
+        $.get('http://localhost:8080/book/listAllWithoutCover')
+            .done(function(data) {
+                document.getElementById("demo").innerHTML = JSON.stringify(data);
+            })
+            .fail (function(data) {
+                console.log('Error: '+data);
+            });
+
+        // var xhr = new XMLHttpRequest();
+        // xhr.open('GET', 'http://localhost:8080/book/listAllWithoutCover');
+        // xhr.onreadystatechange = function() {
+        //     var DONE =4;
+        //     var OK =200;
+        //     if(xhr.readyState === DONE) {
+        //         if(xhr.status === OK) {
+        //             document.getElementById("demo").innerHTML = xhr.responseText;
+        //         } else{
+        //             console.log('Error: '+ xhr.status); // An error occurred during the request.
+        //         }
+        //     }
+        // };
+        // xhr.send(null);
+    }
+
+</script>
+</body>
+</html>

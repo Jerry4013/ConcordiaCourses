@@ -1,0 +1,42 @@
+cd "C:\Concordia\Current Courses\Comp 445\Assignments\a1\src"
+javac httpc.java
+alias httpc='java httpc'
+
+httpc help
+httpc help get
+httpc help post
+httpc get 'http://httpbin.org/get?course=networking&assignment=1'
+httpc get -v 'http://httpbin.org/get?course=networking&assignment=1'
+httpc post -h Content-Type:application/json -d '{"Assignment": 1}' http://httpbin.org/post
+httpc post -v -h Content-Type:application/json -d '{"Assignment": 1}' http://httpbin.org/post
+httpc post -v -h Content-Type:application/json -f 'testdata.json' http://httpbin.org/post
+
+httpc get -v 'http://httpbin.org/redirect/1'
+httpc post -v -h Content-Type:application/json -d '{"Assignment": 1}' 'http://httpbin.org/status/301'
+httpc get -v 'http://httpbin.org/get?course=networking&assignment=1' -o hello.txt
+
+
+curl 'http://httpbin.org/get?course=networking&assignment=1'
+curl -v 'http://httpbin.org/get?course=networking&assignment=1'
+curl -H Content-Type:application/json -d '{"Assignment": 1}' http://httpbin.org/post
+curl -v -H Content-Type:application/json -d '{"Assignment": 1}' http://httpbin.org/post
+curl -v -H Content-Type:application/json --form upload=@testdata.json http://httpbin.org/post
+curl -v 'http://httpbin.org/redirect/1'
+curl -v -H Content-Type:application/json -d '{"Assignment": 1}' 'http://httpbin.org/status/301'
+
+java httpc get "http://localhost:8080/"
+java httpc get -h "Accept: text/html" "http://localhost:8080/"
+java httpc get -h "Accept: text/plain" "http://localhost:8080/"
+java httpc get -h "Accept: application/json" "http://localhost:8080/"
+java httpc get "http://localhost:8080/foo"
+java httpc get "http://localhost:8080/foo.txt"
+java httpc get "http://localhost:8080/display.html"
+java httpc get "http://localhost:8080/displayFile.html"
+java httpc get "http://localhost:8080/C:/Concordia/Current+Courses/Comp+445/test.txt"
+java httpc get "http://localhost:8080/src/main/java/httpfs.java"
+java httpc post -d "test data" "http://localhost:8080/bar"
+java httpc post -d "test data3" "http://localhost:8080/bar?overwrite=true"
+java httpc post -d "test data3" "http://localhost:8080/src/main/java/httpfs.java"
+java httpc post -v -h Content-Type:application/json -f "testdata.json" http://localhost:8080/
+
+./MultiRequests.sh 10

@@ -1,0 +1,38 @@
+<div class="row">
+  <div class="col-xs-12 col-md-6 col-md-offset-3">
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <div class="form-group">
+        <label for="user">User</label>
+        <input
+          type="text"
+          id="user"
+          class="form-control"
+          ngModel
+          name="user"
+          required
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          class="form-control"
+          ngModel
+          name="password"
+          required
+          minlength="6"
+        />
+      </div>
+
+      <div>
+        <button class="btn btn-primary" type="submit">
+          Login
+        </button>
+      </div>
+
+      <h3 *ngIf="hasError">Username or password is incorrect! Try again.</h3>
+    </form>
+  </div>
+</div>

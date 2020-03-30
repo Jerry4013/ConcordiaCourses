@@ -1,0 +1,15 @@
+cd "C:\Concordia\Current Courses\Comp 445\Assignments\a1\src"
+javac httpc.java
+alias httpc='java httpc'
+
+httpc help
+httpc help get
+httpc help post
+httpc get 'http://httpbin.org/get?course=networking&assignment=1'
+httpc get -v 'http://httpbin.org/get?course=networking&assignment=1'
+httpc post -h Content-Type:application/json -d '{"Assignment": 1}' http://httpbin.org/post
+httpc post -v -h Content-Type:application/json -f 'testdata.json' http://httpbin.org/post
+
+httpc get -v 'http://httpbin.org/redirect/1'
+httpc post -v -h Content-Type:application/json -d '{"Assignment": 1}' 'http://httpbin.org/status/301'
+httpc get -v 'http://httpbin.org/get?course=networking&assignment=1' -o hello.txt
